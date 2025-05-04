@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace NutriFlowAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class AjusteDeleteRestrictUsuario : Migration
+    public partial class CriarBancoInicial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -22,6 +22,19 @@ namespace NutriFlowAPI.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Categorias", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Cidades",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Cidade = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Cidades", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -94,26 +107,6 @@ namespace NutriFlowAPI.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Cidades",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Cidade = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    PaisId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Cidades", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Cidades_Paises_PaisId",
-                        column: x => x.PaisId,
-                        principalTable: "Paises",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Usuarios",
                 columns: table => new
                 {
@@ -127,8 +120,7 @@ namespace NutriFlowAPI.Migrations
                     Senha = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     DataCadastro = table.Column<DateTime>(type: "datetime2", nullable: false),
                     PaisId = table.Column<int>(type: "int", nullable: false),
-                    CidadeId = table.Column<int>(type: "int", nullable: false),
-                    PaisModelId = table.Column<int>(type: "int", nullable: true)
+                    CidadeId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -144,12 +136,7 @@ namespace NutriFlowAPI.Migrations
                         column: x => x.PaisId,
                         principalTable: "Paises",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Usuarios_Paises_PaisModelId",
-                        column: x => x.PaisModelId,
-                        principalTable: "Paises",
-                        principalColumn: "Id");
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -213,11 +200,6 @@ namespace NutriFlowAPI.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Cidades_PaisId",
-                table: "Cidades",
-                column: "PaisId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_EstoqueProdutos_CategoriaId",
                 table: "EstoqueProdutos",
                 column: "CategoriaId");
@@ -256,11 +238,6 @@ namespace NutriFlowAPI.Migrations
                 name: "IX_Usuarios_PaisId",
                 table: "Usuarios",
                 column: "PaisId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Usuarios_PaisModelId",
-                table: "Usuarios",
-                column: "PaisModelId");
         }
 
         /// <inheritdoc />

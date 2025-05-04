@@ -7,7 +7,6 @@ namespace NutriFlowAPI.Models.Usuario
         [Key]
         public int Id { get; set; }
         public string Cidade { get; set; }
-        public PaisModel Pais { get; set; }
         public ICollection<UsuarioModel> Usuarios { get; set; }
 
     }

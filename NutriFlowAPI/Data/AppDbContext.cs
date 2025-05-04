@@ -22,13 +22,6 @@ namespace NutriFlowAPI.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Desabilita o cascade delete da FK Usuarios → Paises
-            modelBuilder.Entity<UsuarioModel>()
-                .HasOne(u => u.Pais)
-                .WithMany()
-                .HasForeignKey(u => u.PaisId)
-                .OnDelete(DeleteBehavior.Restrict); // ou .NoAction()
-
             modelBuilder.Entity<EstoqueProdutoModel>()
                 .Property(e => e.Preco)
                 .HasPrecision(18, 2);

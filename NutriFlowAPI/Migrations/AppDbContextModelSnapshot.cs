@@ -196,12 +196,7 @@ namespace NutriFlowAPI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("PaisId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("PaisId");
 
                     b.ToTable("Cidades");
                 });
@@ -251,9 +246,6 @@ namespace NutriFlowAPI.Migrations
                     b.Property<int>("PaisId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("PaisModelId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Senha")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -271,8 +263,6 @@ namespace NutriFlowAPI.Migrations
                     b.HasIndex("CidadeId");
 
                     b.HasIndex("PaisId");
-
-                    b.HasIndex("PaisModelId");
 
                     b.ToTable("Usuarios");
                 });
@@ -328,17 +318,6 @@ namespace NutriFlowAPI.Migrations
                     b.Navigation("Usuario");
                 });
 
-            modelBuilder.Entity("NutriFlowAPI.Models.Usuario.CidadeModel", b =>
-                {
-                    b.HasOne("NutriFlowAPI.Models.Usuario.PaisModel", "Pais")
-                        .WithMany("Cidade")
-                        .HasForeignKey("PaisId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Pais");
-                });
-
             modelBuilder.Entity("NutriFlowAPI.Models.Usuario.UsuarioModel", b =>
                 {
                     b.HasOne("NutriFlowAPI.Models.Usuario.CidadeModel", "Cidade")
@@ -348,14 +327,10 @@ namespace NutriFlowAPI.Migrations
                         .IsRequired();
 
                     b.HasOne("NutriFlowAPI.Models.Usuario.PaisModel", "Pais")
-                        .WithMany()
-                        .HasForeignKey("PaisId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("NutriFlowAPI.Models.Usuario.PaisModel", null)
                         .WithMany("Usuarios")
-                        .HasForeignKey("PaisModelId");
+                        .HasForeignKey("PaisId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Cidade");
 
@@ -394,8 +369,6 @@ namespace NutriFlowAPI.Migrations
 
             modelBuilder.Entity("NutriFlowAPI.Models.Usuario.PaisModel", b =>
                 {
-                    b.Navigation("Cidade");
-
                     b.Navigation("Usuarios");
                 });
 

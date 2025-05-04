@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.Identity.Client;
+using System.ComponentModel.DataAnnotations;
 
 namespace NutriFlowAPI.Models.Usuario
 {
@@ -15,9 +16,7 @@ namespace NutriFlowAPI.Models.Usuario
         public DateTime DataCadastro { get; set; } = DateTime.Now;
 
         //Tabelas Estrangeiras
-        public int PaisId { get; set; }
         public PaisModel Pais { get; set; }
-
         public CidadeModel Cidade { get; set; }
         public ICollection<EstoqueProdutoModel> EstoqueProdutos { get; set; }
     }
