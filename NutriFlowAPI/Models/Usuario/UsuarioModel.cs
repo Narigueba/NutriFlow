@@ -16,7 +16,9 @@ namespace NutriFlowAPI.Models.Usuario
         public DateTime DataCadastro { get; set; } = DateTime.Now;
 
         //Tabelas Estrangeiras
+        public int PaisId { get; set; }
         public PaisModel Pais { get; set; }
+        public int CidadeId { get; set; }
         public CidadeModel Cidade { get; set; }
         public ICollection<EstoqueProdutoModel> EstoqueProdutos { get; set; }
     }
