@@ -4,6 +4,7 @@ using Microsoft.IdentityModel.Tokens;
 using NutriFlowAPI.Models;
 using NutriFlowAPI.Models.Usuario;
 using NutriFlowAPI.Services.Usuario;
+using NutriFlowAPI.DTO.Usuario;
 
 namespace NutriFlowAPI.Controllers
 {
@@ -32,5 +33,13 @@ namespace NutriFlowAPI.Controllers
 
             return Ok(usuario);
         }
+
+        [HttpPost("CriarUsuario")]
+        public async Task<ActionResult<ResponseModel<UsuarioModel>>> CriarUsuario(UsuarioCriacaoDTO usuarioCriacaoDTO)
+        {
+            var usuarios = await _usuarioInterface.CriarUsuario(usuarioCriacaoDTO);
+            return Ok(usuarios);
+        }
+
     }
 }

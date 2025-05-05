@@ -1,13 +1,10 @@
-﻿using Microsoft.Identity.Client;
-using System.ComponentModel.DataAnnotations;
+﻿using NutriFlowAPI.Models.Usuario;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace NutriFlowAPI.Models.Usuario
+namespace NutriFlowAPI.DTO.Usuario
 {
-    public class UsuarioModel
+    public class UsuarioCriacaoDTO
     {
-        [Key]
-        public int Id { get; set; }
         public string Nome { get; set; }
         public string Sobrenome { get; set; }
         public string Email { get; set; }
@@ -17,16 +14,9 @@ namespace NutriFlowAPI.Models.Usuario
         public DateTime DataCadastro { get; set; } = DateTime.Now;
 
         //Tabelas Estrangeiras
-        
         public int PaisId { get; set; }
-        [ForeignKey("PaisId")]
-        public PaisModel Pais { get; set; }
-
         public int CidadeId { get; set; }
 
-        [ForeignKey("CidadeId")]
-        public CidadeModel Cidade { get; set; }
-
-        public ICollection<EstoqueProdutoModel> EstoqueProdutos { get; set; }
+        
     }
 }
