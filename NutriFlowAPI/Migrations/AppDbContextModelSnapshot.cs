@@ -36,7 +36,7 @@ namespace NutriFlowAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categorias");
+                    b.ToTable("Categorias", (string)null);
                 });
 
             modelBuilder.Entity("NutriFlowAPI.Models.EstabelecimentoModel", b =>
@@ -60,7 +60,7 @@ namespace NutriFlowAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Estabelecimentos");
+                    b.ToTable("Estabelecimentos", (string)null);
                 });
 
             modelBuilder.Entity("NutriFlowAPI.Models.EstoqueProdutoModel", b =>
@@ -123,7 +123,7 @@ namespace NutriFlowAPI.Migrations
 
                     b.HasIndex("UsuarioId");
 
-                    b.ToTable("EstoqueProdutos");
+                    b.ToTable("EstoqueProdutos", (string)null);
                 });
 
             modelBuilder.Entity("NutriFlowAPI.Models.MarcaModel", b =>
@@ -140,7 +140,7 @@ namespace NutriFlowAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Marcas");
+                    b.ToTable("Marcas", (string)null);
                 });
 
             modelBuilder.Entity("NutriFlowAPI.Models.ProdutoModel", b =>
@@ -160,7 +160,7 @@ namespace NutriFlowAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Produtos");
+                    b.ToTable("Produtos", (string)null);
                 });
 
             modelBuilder.Entity("NutriFlowAPI.Models.UnidadeMedidaModel", b =>
@@ -181,7 +181,7 @@ namespace NutriFlowAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("UnidadeMedidas");
+                    b.ToTable("UnidadeMedidas", (string)null);
                 });
 
             modelBuilder.Entity("NutriFlowAPI.Models.Usuario.CidadeModel", b =>
@@ -198,7 +198,7 @@ namespace NutriFlowAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Cidades");
+                    b.ToTable("Cidades", (string)null);
                 });
 
             modelBuilder.Entity("NutriFlowAPI.Models.Usuario.PaisModel", b =>
@@ -215,7 +215,7 @@ namespace NutriFlowAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Paises");
+                    b.ToTable("Paises", (string)null);
                 });
 
             modelBuilder.Entity("NutriFlowAPI.Models.Usuario.UsuarioModel", b =>
@@ -264,7 +264,7 @@ namespace NutriFlowAPI.Migrations
 
                     b.HasIndex("PaisId");
 
-                    b.ToTable("Usuarios");
+                    b.ToTable("Usuarios", (string)null);
                 });
 
             modelBuilder.Entity("NutriFlowAPI.Models.EstoqueProdutoModel", b =>
