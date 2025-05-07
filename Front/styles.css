@@ -281,3 +281,20 @@ i[data-lucide] {
   transform: scale(1.2);
   stroke: var(--green-primary);
 }
+
+.bottom-nav-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.2s ease;
+}
+
+/*.form-message.error {
+
+}*/
+
+/* .form-message.success {
+
+}*/
