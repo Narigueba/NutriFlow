@@ -341,3 +341,4 @@ C:\Users\Guilherme\Desktop\NutriFlow\NutriFlow\NutriFlowAPI\obj\Debug\net8.0\sta
 C:\Users\Guilherme\Desktop\NutriFlow\NutriFlow\NutriFlowAPI\obj\Debug\net8.0\NutriFlo.18CF9E09.Up2Date
 C:\Users\Guilherme\Desktop\NutriFlow\NutriFlow\NutriFlowAPI\obj\Debug\net8.0\NutriFlowAPI.genruntimeconfig.cache
 C:\Users\Guilherme\Desktop\NutriFlow\NutriFlow\NutriFlowAPI\obj\Debug\net8.0\ref\NutriFlowAPI.dll
+C:\Users\Guilherme\Desktop\NutriFlow\NutriFlow\NutriFlowAPI\bin\Debug\net8.0\NutriFlowAPI.staticwebassets.runtime.json
