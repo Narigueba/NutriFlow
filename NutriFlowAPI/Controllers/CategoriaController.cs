@@ -1,0 +1,33 @@
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using NutriFlowAPI.Models;
+using NutriFlowAPI.Services.Categoria;
+
+namespace NutriFlowAPI.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class CategoriaController : ControllerBase
+    {
+        private readonly ICategoriaInterface _categoriaInterface;
+        public CategoriaController(ICategoriaInterface categoriaInterface)
+        {
+            _categoriaInterface = categoriaInterface;
+        }
+
+        [HttpGet("ListarCategorias")]
+        public async Task<ActionResult<ResponseModel<List<CategoriaModel>>>> ListarCategorias()
+        {
+            var categorias = await _categoriaInterface.ListarCategorias();
+            return Ok(categorias);
+        }
+
+        [HttpGet("BuscarCategoriaPorId/{idCategoria}")]
+        public async Task<ActionResult<ResponseModel<CategoriaModel>>> BuscarCategoriaPorId(int idCategoria)
+        {
+            var categoria = await _categoriaInterface.BuscarCategoriaPorId(idCategoria);
+            return Ok(categoria);
+        }
+
+    }
+}
