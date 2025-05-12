@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using NutriFlowAPI.DTO.Categoria;
 using NutriFlowAPI.Models;
 using NutriFlowAPI.Services.Categoria;
 
@@ -24,10 +25,17 @@ namespace NutriFlowAPI.Controllers
 
         [HttpGet("BuscarCategoriaPorId/{idCategoria}")]
         public async Task<ActionResult<ResponseModel<CategoriaModel>>> BuscarCategoriaPorId(int idCategoria)
+
         {
             var categoria = await _categoriaInterface.BuscarCategoriaPorId(idCategoria);
             return Ok(categoria);
         }
 
+        [HttpPost("CriarCategoria")]
+        public async Task<ActionResult<ResponseModel<CategoriaModel>>> CriarCategoria(CategoriaCriacaoDTO categoriaCriacaoDTO)
+        {
+            var categorias = await _categoriaInterface.CriarCategoria(categoriaCriacaoDTO);
+            return Ok(categorias); 
+        }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using NutriFlowAPI.Data;
+using NutriFlowAPI.DTO.Categoria;
 using NutriFlowAPI.Models;
 
 namespace NutriFlowAPI.Services.Categoria
@@ -39,6 +40,43 @@ namespace NutriFlowAPI.Services.Categoria
 
                 return resposta;
             }
+        }
+
+        public async Task<ResponseModel<List<CategoriaModel>>> CriarCategoria(CategoriaCriacaoDTO categoriaCriacaoDTO)
+        {
+            ResponseModel<List<CategoriaModel>> resposta = new ResponseModel<List<CategoriaModel>>();
+            try
+            {
+                var categoria = new CategoriaModel()
+                {
+                    Categoria = categoriaCriacaoDTO.Categoria
+                };
+
+                _context.Add(categoria);
+                await _context.SaveChangesAsync();
+
+                resposta.Dados = await _context.Categorias.ToListAsync();
+                resposta.Mensagem = "Categoria criada com sucesso!";
+
+                return resposta;
+            }
+            catch (Exception ex) 
+            {
+                resposta.Mensagem = ex.Message;
+                resposta.Status = false;
+
+                return resposta;
+            }
+        }
+
+        public Task<ResponseModel<List<CategoriaModel>>> EditarCategoria(CategoriaEdicaoDTO categoriaEdicaoDTO)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<ResponseModel<List<CategoriaModel>>> ExcluirCategoria(int idCategoria)
+        {
+            throw new NotImplementedException();
         }
 
         public async Task<ResponseModel<List<CategoriaModel>>> ListarCategorias()

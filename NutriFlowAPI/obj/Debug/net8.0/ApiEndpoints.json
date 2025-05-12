@@ -27,6 +27,32 @@
   },
   {
     "ContainingType": "NutriFlowAPI.Controllers.CategoriaController",
+    "Method": "CriarCategoria",
+    "RelativePath": "api/Categoria/CriarCategoria",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoriaCriacaoDTO",
+        "Type": "NutriFlowAPI.DTO.Categoria.CategoriaCriacaoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[NutriFlowAPI.Models.CategoriaModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.CategoriaController",
     "Method": "ListarCategorias",
     "RelativePath": "api/Categoria/ListarCategorias",
     "HttpMethod": "GET",
