@@ -32,10 +32,25 @@ namespace NutriFlowAPI.Controllers
         }
 
         [HttpPost("CriarCategoria")]
-        public async Task<ActionResult<ResponseModel<CategoriaModel>>> CriarCategoria(CategoriaCriacaoDTO categoriaCriacaoDTO)
+        public async Task<ActionResult<ResponseModel<List<CategoriaModel>>>> CriarCategoria(CategoriaCriacaoDTO categoriaCriacaoDTO)
         {
             var categorias = await _categoriaInterface.CriarCategoria(categoriaCriacaoDTO);
             return Ok(categorias); 
         }
+
+        [HttpPut("EditarCategoria")]
+        public async Task<ActionResult<ResponseModel<List<CategoriaModel>>>> EditarCategoria(CategoriaEdicaoDTO categoriaEdicaoDTO)
+        {
+            var categorias = await _categoriaInterface.EditarCategoria(categoriaEdicaoDTO);
+            return Ok(categorias);
+        }
+
+        [HttpDelete("ExcluirCategoria")]
+        public async Task<ActionResult<ResponseModel<CategoriaModel>>> ExcluirCategoria(int idCategoria)
+        {
+            var categorias = await _categoriaInterface.ExcluirCategoria(idCategoria);
+            return Ok(categorias);
+        }
     }
+
 }

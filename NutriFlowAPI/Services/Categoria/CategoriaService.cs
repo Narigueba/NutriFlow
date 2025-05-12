@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using NutriFlowAPI.Data;
 using NutriFlowAPI.DTO.Categoria;
 using NutriFlowAPI.Models;
@@ -69,14 +70,71 @@ namespace NutriFlowAPI.Services.Categoria
             }
         }
 
-        public Task<ResponseModel<List<CategoriaModel>>> EditarCategoria(CategoriaEdicaoDTO categoriaEdicaoDTO)
+        public async Task<ResponseModel<List<CategoriaModel>>> EditarCategoria(CategoriaEdicaoDTO categoriaEdicaoDTO)
         {
-            throw new NotImplementedException();
+            ResponseModel<List<CategoriaModel>> resposta = new ResponseModel<List<CategoriaModel>>();
+            try
+            {
+                var categoria = await _context.Categorias
+                    .FirstOrDefaultAsync(categoriaBanco => categoriaBanco.Id == categoriaEdicaoDTO.Id);
+
+                if (categoria == null)
+                {
+                    resposta.Mensagem = "Nenhum registro localizado";
+
+                    return resposta;
+                }
+
+                categoria.Categoria = categoriaEdicaoDTO.Categoria;
+            
+                _context.Update(categoria);
+                await _context.SaveChangesAsync();
+                resposta.Dados = await _context.Categorias.ToListAsync();
+                resposta.Mensagem = "Categoria editada com sucesso";
+
+                return resposta;
+
+            }
+            catch (Exception ex)
+            {
+                resposta.Mensagem = ex.Message;
+                resposta.Status = false;
+
+                return resposta;
+            }
         }
 
-        public Task<ResponseModel<List<CategoriaModel>>> ExcluirCategoria(int idCategoria)
+        public async Task<ResponseModel<List<CategoriaModel>>> ExcluirCategoria(int idCategoria)
         {
-            throw new NotImplementedException();
+            ResponseModel<List<CategoriaModel>> resposta = new ResponseModel<List<CategoriaModel>>();
+
+            try
+            {
+                var categoria = await _context.Categorias
+                    .FirstOrDefaultAsync(categoriaBanco => categoriaBanco.Id == idCategoria);
+
+                if (categoria == null)
+                {
+                    resposta.Mensagem = "Nenhum registro localizado";
+
+                    return resposta;
+                }
+
+                _context.Remove(categoria);
+                await _context.SaveChangesAsync();
+
+                resposta.Dados = await _context.Categorias.ToListAsync();
+                resposta.Mensagem = "Registro excluido com sucesso";
+
+                return resposta;
+            }
+            catch (Exception ex)
+            {
+                resposta.Mensagem = ex.Message;
+                resposta.Status = false;
+
+                return resposta;
+            }
         }
 
         public async Task<ResponseModel<List<CategoriaModel>>> ListarCategorias()
