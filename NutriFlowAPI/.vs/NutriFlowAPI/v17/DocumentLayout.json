@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9CB4DF96-1052-4D7F-BE60-5D3030738207}|NutriFlowAPI.csproj|c:\\users\\guilherme\\desktop\\nutriflow\\nutriflow\\nutriflowapi\\services\\usuario\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CB4DF96-1052-4D7F-BE60-5D3030738207}|NutriFlowAPI.csproj|solutionrelative:services\\usuario\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CB4DF96-1052-4D7F-BE60-5D3030738207}|NutriFlowAPI.csproj|c:\\users\\guilherme\\desktop\\nutriflow\\nutriflow\\nutriflowapi\\services\\marca\\imarcainterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CB4DF96-1052-4D7F-BE60-5D3030738207}|NutriFlowAPI.csproj|solutionrelative:services\\marca\\imarcainterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9CB4DF96-1052-4D7F-BE60-5D3030738207}|NutriFlowAPI.csproj|c:\\users\\guilherme\\desktop\\nutriflow\\nutriflow\\nutriflowapi\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CB4DF96-1052-4D7F-BE60-5D3030738207}|NutriFlowAPI.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CB4DF96-1052-4D7F-BE60-5D3030738207}|NutriFlowAPI.csproj|c:\\users\\guilherme\\desktop\\nutriflow\\nutriflow\\nutriflowapi\\controllers\\marcacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CB4DF96-1052-4D7F-BE60-5D3030738207}|NutriFlowAPI.csproj|solutionrelative:controllers\\marcacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9CB4DF96-1052-4D7F-BE60-5D3030738207}|NutriFlowAPI.csproj|c:\\users\\guilherme\\desktop\\nutriflow\\nutriflow\\nutriflowapi\\services\\usuario\\iusuariointerface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CB4DF96-1052-4D7F-BE60-5D3030738207}|NutriFlowAPI.csproj|solutionrelative:services\\usuario\\iusuariointerface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CB4DF96-1052-4D7F-BE60-5D3030738207}|NutriFlowAPI.csproj|c:\\users\\guilherme\\desktop\\nutriflow\\nutriflow\\nutriflowapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CB4DF96-1052-4D7F-BE60-5D3030738207}|NutriFlowAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9CB4DF96-1052-4D7F-BE60-5D3030738207}|NutriFlowAPI.csproj|c:\\users\\guilherme\\desktop\\nutriflow\\nutriflow\\nutriflowapi\\dto\\usuario\\usuariocriacaodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CB4DF96-1052-4D7F-BE60-5D3030738207}|NutriFlowAPI.csproj|solutionrelative:dto\\usuario\\usuariocriacaodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9CB4DF96-1052-4D7F-BE60-5D3030738207}|NutriFlowAPI.csproj|c:\\users\\guilherme\\desktop\\nutriflow\\nutriflow\\nutriflowapi\\models\\usuario\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CB4DF96-1052-4D7F-BE60-5D3030738207}|NutriFlowAPI.csproj|solutionrelative:models\\usuario\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CB4DF96-1052-4D7F-BE60-5D3030738207}|NutriFlowAPI.csproj|c:\\users\\guilherme\\desktop\\nutriflow\\nutriflow\\nutriflowapi\\services\\marca\\marcaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CB4DF96-1052-4D7F-BE60-5D3030738207}|NutriFlowAPI.csproj|solutionrelative:services\\marca\\marcaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +26,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MarcaController.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\Controllers\\MarcaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MarcaController.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\Controllers\\MarcaController.cs",
+              "RelativeToolTip": "Controllers\\MarcaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T16:54:12.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T16:51:54.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IMarcaInterface.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\Services\\Marca\\IMarcaInterface.cs",
+              "RelativeDocumentMoniker": "Services\\Marca\\IMarcaInterface.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\Services\\Marca\\IMarcaInterface.cs",
+              "RelativeToolTip": "Services\\Marca\\IMarcaInterface.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T16:49:59.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MarcaService.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\Services\\Marca\\MarcaService.cs",
+              "RelativeDocumentMoniker": "Services\\Marca\\MarcaService.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\Services\\Marca\\MarcaService.cs",
+              "RelativeToolTip": "Services\\Marca\\MarcaService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T16:49:49.215Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -39,71 +87,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UsuarioModel.cs",
-              "DocumentMoniker": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\Models\\Usuario\\UsuarioModel.cs",
-              "RelativeDocumentMoniker": "Models\\Usuario\\UsuarioModel.cs",
-              "ToolTip": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\Models\\Usuario\\UsuarioModel.cs",
-              "RelativeToolTip": "Models\\Usuario\\UsuarioModel.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA3wBkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T16:32:02.053Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UsuarioCriacaoDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\DTO\\Usuario\\UsuarioCriacaoDTO.cs",
-              "RelativeDocumentMoniker": "DTO\\Usuario\\UsuarioCriacaoDTO.cs",
-              "ToolTip": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\DTO\\Usuario\\UsuarioCriacaoDTO.cs",
-              "RelativeToolTip": "DTO\\Usuario\\UsuarioCriacaoDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T16:16:30.189Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UsuarioService.cs",
-              "DocumentMoniker": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\Services\\Usuario\\UsuarioService.cs",
-              "RelativeDocumentMoniker": "Services\\Usuario\\UsuarioService.cs",
-              "ToolTip": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\Services\\Usuario\\UsuarioService.cs",
-              "RelativeToolTip": "Services\\Usuario\\UsuarioService.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAgwEIAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T19:12:57.158Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAA0wCgAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T19:23:59.565Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IUsuarioInterface.cs",
-              "DocumentMoniker": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\Services\\Usuario\\IUsuarioInterface.cs",
-              "RelativeDocumentMoniker": "Services\\Usuario\\IUsuarioInterface.cs",
-              "ToolTip": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\Services\\Usuario\\IUsuarioInterface.cs",
-              "RelativeToolTip": "Services\\Usuario\\IUsuarioInterface.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T19:09:37.961Z",
-              "EditorCaption": ""
             }
           ]
         }

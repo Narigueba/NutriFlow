@@ -80,6 +80,79 @@ namespace NutriFlowAPI.Services.Usuario
             }
         }
 
+        public async Task<ResponseModel<List<UsuarioModel>>> EditarUsuario(UsuarioEdicaoDTO usuarioEdicaoDTO)
+        {
+            ResponseModel<List<UsuarioModel>> resposta = new ResponseModel<List<UsuarioModel>>();
+
+            try
+            {
+                var usuario = await _context.Usuarios.FirstOrDefaultAsync(usuarioBanco => usuarioBanco.Id == usuarioEdicaoDTO.Id);
+
+                if (usuario == null)
+                {
+                    resposta.Mensagem = "Nenhum usuario localizado";
+                    return resposta;
+                }
+
+                usuario.Nome = usuarioEdicaoDTO.Nome;
+                usuario.Sobrenome = usuarioEdicaoDTO.Sobrenome;
+                usuario.Email = usuarioEdicaoDTO.Email;
+                usuario.DataNascimento = usuarioEdicaoDTO.DataNascimento;
+                usuario.Telefone = usuarioEdicaoDTO.Telefone;
+                usuario.Senha = usuarioEdicaoDTO.Senha;
+                usuario.PaisId = usuarioEdicaoDTO.PaisId;
+                usuario.CidadeId = usuarioEdicaoDTO.CidadeId;
+                
+                _context.Update(usuario);
+                await _context.SaveChangesAsync();
+
+                resposta.Dados = await _context.Usuarios.ToListAsync();
+                resposta.Mensagem = "Usuario editado com sucesso";
+
+                return resposta;
+            }
+            catch (Exception ex)
+            {
+                resposta.Mensagem = ex.Message;
+                resposta.Status = false;
+
+                return resposta;
+            }
+        }
+
+        public async Task<ResponseModel<List<UsuarioModel>>> ExcluirUsuario(int idUsuario)
+        {
+            ResponseModel<List<UsuarioModel>> resposta = new ResponseModel<List<UsuarioModel>>();
+
+            try
+            {
+
+                var usuario = await _context.Usuarios.
+                    FirstOrDefaultAsync(usuarioBanco => usuarioBanco.Id == idUsuario);
+
+                if (usuario == null)
+                {
+                    resposta.Mensagem = "Nenhum usuario localizado";
+                    return resposta;
+                }
+
+                _context.Remove(usuario);
+                await _context.SaveChangesAsync();
+
+                resposta.Dados = await _context.Usuarios.ToListAsync();
+                resposta.Mensagem = "Usuario removido com sucesso";
+
+                return resposta;
+
+            } catch (Exception ex) 
+            {
+                resposta.Mensagem = ex.Message;
+                resposta.Status = false;
+
+                return resposta;
+            }
+        }
+
         public async Task<ResponseModel<List<UsuarioModel>>> ListarUsuarios()
         {
             ResponseModel<List<UsuarioModel>> resposta = new ResponseModel<List<UsuarioModel>>();
