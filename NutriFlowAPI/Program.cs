@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using NutriFlowAPI.Data;
 using NutriFlowAPI.Services.Categoria;
+using NutriFlowAPI.Services.Marca;
 using NutriFlowAPI.Services.Usuario;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +15,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IUsuarioInterface, UsuarioService>();
 builder.Services.AddScoped<ICategoriaInterface, CategoriaService>();
+builder.Services.AddScoped<IMarcaInterface, MarcaService>();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
