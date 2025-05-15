@@ -27,7 +27,7 @@ body {
 }
 
 /* Logo e pesquisa */
-.top-header {
+header {
   position: sticky;
   top: 0;
   background-color: white;
@@ -290,11 +290,3 @@ i[data-lucide] {
   color: #fff;
   transition: transform 0.2s ease;
 }
-
-/*.form-message.error {
-
-}*/
-
-/* .form-message.success {
-
-}*/

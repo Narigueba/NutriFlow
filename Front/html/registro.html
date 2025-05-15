@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cadastro de Usuário - NutriFlow</title>
+  <title>Cadastro de Usuário | NutriFlow</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -30,11 +30,26 @@
 
         <button type="submit" class="btn-primary">Cadastrar</button>
       </form>
+      <p class="login-link">Já tem conta? <a href="login.html">Login</a></p>
       <div id="form-message" class="form-message"></div>
     </section>
   </main>
-
-  <!-- Script de validação -->
-  <script src="register.js"></script>
 </body>
-</html>
+
+<!-- NavBar -->
+  <footer>
+    <nav class="bottom-nav">
+      <a href="index.html" data-section="Início" class="bottom-nav-button"><i data-lucide="home"></i></a>
+      <a href="estoque.html" class="bottom-nav-button" data-section="Perfil"><i data-lucide="box"></i></a>
+      <button data-section="Adicionar"><i data-lucide="plus"></i></button>
+      <button data-section="Notificações"><i data-lucide="bell"></i></button>
+      <button class="active" data-section="Perfil"><i data-lucide="user"></i></button>
+      </a>
+    </nav>
+  </footer>
+
+  <!-- Scripts-->
+  <script src="register.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>  lucide.createIcons();</script>
+  </html>

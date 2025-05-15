@@ -1,5 +1,5 @@
-#trocar lupa por armazenamento homepage
-#criar front de todas as abas homepage
+V trocar lupa por armazenamento homepage
+# criar front de todas as abas homepage
 #homepage secao receitas
 ##armazenamento:
 #lista de itens cadastrados (estoque, marca, categoria, idCompra)

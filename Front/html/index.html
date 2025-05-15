@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NutriFlow</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href=".\styles.css" />
 </head>
 <body>
 
 <!--Barra de busca e logo-->
-  <header class="top-header">
+  <header>
     <div class="logo">NutriFlow</div>
     <input type="text" placeholder="Buscar..." class="search-bar" />
   </header>
@@ -110,11 +110,10 @@
   <footer>
     <nav class="bottom-nav">
       <button class="active" data-section="Início"><i data-lucide="home"></i></button>
-      <button data-section="Busca"><i data-lucide="search"></i></button>
+      <a href="estoque.html" class="bottom-nav-button" data-section="Perfil"><i data-lucide="box"></i></a>
       <button data-section="Adicionar"><i data-lucide="plus"></i></button>
       <button data-section="Notificações"><i data-lucide="bell"></i></button>
-      <a href="register.html" class="bottom-nav-button" data-section="Perfil">
-        <i data-lucide="user"></i>
+      <a href="registro.html" class="bottom-nav-button" data-section="Perfil"><i data-lucide="user"></i>
       </a>
     </nav>
   </footer>
@@ -122,8 +121,6 @@
   <!-- Scripts -->
   <script src="script.js"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
-  <script>
-    lucide.createIcons();
-  </script>
+  <script>lucide.createIcons();</script>
 </body>
 </html>
