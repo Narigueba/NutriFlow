@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestão de Produtos - NutriFlow</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Cabeçalho compartilhado -->
+  <header class="top-header">
+    <div class="logo">NutriFlow</div>
+  </header>
+
+  <main class="container">
+    <section class="product-management">
+      <div class="section-title">
+        <span>Produtos</span>
+        <button id="btn-new-product" class="btn-primary">Novo Produto</button>
+      </div>
+      <table id="product-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Preço</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Linhas de produtos serão inseridas via JavaScript -->
+        </tbody>
+      </table>
+      <div id="message" class="form-message"></div>
+    </section>
+  </main>
+
+  <!-- NavBar -->
+  <footer>
+    <nav class="bottom-nav">
+      <a href="index.html" data-section="Início" class="bottom-nav-button"><i data-lucide="home"></i></a>
+      <button class="active" data-section="Produtos"><i data-lucide="box"></i></button>
+      <button data-section="Adicionar"><i data-lucide="plus"></i></button>
+      <button data-section="Notificações"><i data-lucide="bell"></i></button>
+      <a href="registro.html" data-section="Perfil" class="bottom-nav-button"><i data-lucide="user"></i></a>
+      </a>
+    </nav>
+  </footer>
+
+  <!-- Biblioteca de ícones Lucide -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>lucide.createIcons();</script>
+  <script src="products.js"></script>
+</body>
+</html>
