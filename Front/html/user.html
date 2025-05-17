@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestão de Usuários - NutriFlow</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Cabeçalho compartilhado -->
+  <header class="top-header">
+    <div class="logo">NutriFlow</div>
+  </header>
+
+  <main class="container">
+    <section class="user-management">
+      <div class="section-title">
+        <span>Usuários</span>
+        <button id="btn-new" class="btn-primary">Novo Usuário</button>
+      </div>
+      <table id="user-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Linhas de usuários serão inseridas via JavaScript -->
+        </tbody>
+      </table>
+      <div id="message" class="form-message"></div>
+    </section>
+  </main>
+
+  <!-- Biblioteca de ícones Lucide -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>lucide.createIcons();</script>
+  <!-- Script de gerenciamento de usuários -->
+  <script src="users.js"></script>
+</body>
+</html>
