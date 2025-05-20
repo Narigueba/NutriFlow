@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using NutriFlowAPI.Data;
+using NutriFlowAPI.DTO.Marca;
 using NutriFlowAPI.Models;
 
 namespace NutriFlowAPI.Services.Marca
@@ -12,7 +13,38 @@ namespace NutriFlowAPI.Services.Marca
             _context = context;
         }
 
-        public Task<ResponseModel<MarcaModel>> BuscarMarcaPorId(int idMarca)
+        public async Task<ResponseModel<MarcaModel>> BuscarMarcaPorId(int idMarca)
+        {
+            ResponseModel<MarcaModel> resposta = new ResponseModel<MarcaModel>();
+
+            try
+            {
+                var marca = await _context.Marcas.FirstOrDefaultAsync(marcaBanco => marcaBanco.Id == idMarca);
+
+                if (marca == null) 
+                {
+                    resposta.Mensagem = "Nenhum registro localizado";
+
+                    return resposta;
+                }
+
+                resposta.Dados = marca;
+                resposta.Mensagem = "Marca localizada";
+
+                return resposta;
+                
+
+
+            } catch (Exception ex)
+            {
+                resposta.Mensagem = ex.Message;
+                resposta.Status = false;
+
+                return resposta;
+            }
+        }
+
+        public Task<ResponseModel<List<MarcaModel>>> CriarMarca(MarcaCriacaoDTO marcaCriacaoDTO)
         {
             throw new NotImplementedException();
         }

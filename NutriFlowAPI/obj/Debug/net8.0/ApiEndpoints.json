@@ -125,6 +125,32 @@
   },
   {
     "ContainingType": "NutriFlowAPI.Controllers.MarcaController",
+    "Method": "BuscarMarcaPorId",
+    "RelativePath": "api/Marca/BuscarMarcaPorId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idMarca",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[NutriFlowAPI.Models.MarcaModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.MarcaController",
     "Method": "ListarMarcas",
     "RelativePath": "api/Marca/ListarMarcas",
     "HttpMethod": "GET",
