@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9CB4DF96-1052-4D7F-BE60-5D3030738207}|NutriFlowAPI.csproj|c:\\users\\guilherme\\desktop\\nutriflow\\nutriflow\\nutriflowapi\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CB4DF96-1052-4D7F-BE60-5D3030738207}|NutriFlowAPI.csproj|solutionrelative:controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9CB4DF96-1052-4D7F-BE60-5D3030738207}|NutriFlowAPI.csproj|c:\\users\\guilherme\\desktop\\nutriflow\\nutriflow\\nutriflowapi\\services\\marca\\imarcainterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9CB4DF96-1052-4D7F-BE60-5D3030738207}|NutriFlowAPI.csproj|solutionrelative:services\\marca\\imarcainterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,8 +30,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CategoriaController.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\Controllers\\CategoriaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoriaController.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\Controllers\\CategoriaController.cs",
+              "RelativeToolTip": "Controllers\\CategoriaController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T23:29:54.034Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -38,7 +55,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MarcaController.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\Controllers\\MarcaController.cs",
               "RelativeDocumentMoniker": "Controllers\\MarcaController.cs",
@@ -50,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -62,7 +79,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "IMarcaInterface.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\Services\\Marca\\IMarcaInterface.cs",
               "RelativeDocumentMoniker": "Services\\Marca\\IMarcaInterface.cs",
@@ -75,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MarcaService.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\Services\\Marca\\MarcaService.cs",
               "RelativeDocumentMoniker": "Services\\Marca\\MarcaService.cs",

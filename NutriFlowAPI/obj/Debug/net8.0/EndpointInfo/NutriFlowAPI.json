@@ -209,6 +209,35 @@
         }
       }
     },
+    "/api/Marca/ListarMarcas": {
+      "get": {
+        "tags": [
+          "Marca"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MarcaModelListResponseModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MarcaModelListResponseModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MarcaModelListResponseModel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Usuario/ListarUsuarios": {
       "get": {
         "tags": [
@@ -614,6 +643,26 @@
               "$ref": "#/components/schemas/EstoqueProdutoModel"
             },
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MarcaModelListResponseModel": {
+        "type": "object",
+        "properties": {
+          "dados": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MarcaModel"
+            },
+            "nullable": true
+          },
+          "mensagem": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false
