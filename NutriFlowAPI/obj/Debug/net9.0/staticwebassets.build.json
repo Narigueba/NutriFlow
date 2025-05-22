@@ -1,12 +1,20 @@
 {
   "Version": 1,
-  "Hash": "WQ4JdQDFQn0BGsRmlNnSGqVLStNaXzaaC5L/hUmAZfc=",
+  "Hash": "54hCz54dlxmR838fkhCQNbV0vxf1pgIgO/xlO5fNcUU=",
   "Source": "NutriFlowAPI",
   "BasePath": "_content/NutriFlowAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "NutriFlowAPI\\wwwroot",
+      "Source": "NutriFlowAPI",
+      "ContentRoot": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\wwwroot\\",
+      "BasePath": "_content/NutriFlowAPI",
+      "Pattern": "**"
+    }
+  ],
   "Assets": [],
   "Endpoints": []
 }

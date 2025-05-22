@@ -8,5 +8,7 @@ namespace NutriFlowAPI.Services.Marca
         Task<ResponseModel<List<MarcaModel>>> ListarMarcas();
         Task<ResponseModel<MarcaModel>> BuscarMarcaPorId(int idMarca);
         Task<ResponseModel<List<MarcaModel>>> CriarMarca(MarcaCriacaoDTO marcaCriacaoDTO);
+        Task<ResponseModel<List<MarcaModel>>> EditarMarca(MarcaEdicaoDTO marcaEdicaoDTO);
+        Task<ResponseModel<List<MarcaModel>>> ExcluirMarca(int idMarca);
     }
 }
