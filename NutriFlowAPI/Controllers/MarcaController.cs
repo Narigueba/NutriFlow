@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using NutriFlowAPI.DTO.Marca;
 using NutriFlowAPI.Models;
 using NutriFlowAPI.Services.Marca;
 
@@ -31,6 +32,26 @@ namespace NutriFlowAPI.Controllers
             return Ok(marca);
         }
 
+        [HttpPost("CriarMarca")]
+        public async Task<ActionResult<ResponseModel<MarcaModel>>> CriarMarca(MarcaCriacaoDTO marcaCriacaoDTO)
+        {
+            var marcas = await _marcaInterface.CriarMarca(marcaCriacaoDTO);
+            return Ok(marcas);
+        }
+
+        [HttpPut("EditarMarca")]
+        public async Task<ActionResult<ResponseModel<MarcaModel>>> EditarMarca(MarcaEdicaoDTO marcaEdicaoDTO)
+        {
+            var marcas = await _marcaInterface.EditarMarca(marcaEdicaoDTO);
+            return Ok(marcas);
+        }
+
+        [HttpDelete("ExcluirMarca")]
+        public async Task<ActionResult<ResponseModel<MarcaModel>>> ExcluirMarca(int idMarca)
+        {
+            var marcas = await _marcaInterface.ExcluirMarca(idMarca);
+            return Ok(marcas);
+        }
 
     }
 }
