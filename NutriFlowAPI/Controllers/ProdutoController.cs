@@ -40,5 +40,12 @@ namespace NutriFlowAPI.Controllers
             return Ok(produto);
         }
 
+        [HttpDelete("ExcluirProduto")]
+        public async Task<ActionResult<ResponseModel<ProdutoModel>>> ExcluirProduto(int idProduto)
+        {
+            var produtos = await _produtoInterface.ExcluirProduto(idProduto);
+            return Ok(produtos);
+        }
+
     }
 }

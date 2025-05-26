@@ -96,9 +96,38 @@ namespace NutriFlowAPI.Services.Produto
             throw new NotImplementedException();
         }
 
-        public Task<ResponseModel<List<ProdutoModel>>> ExcluirProduto(int idProduto)
+        public async Task<ResponseModel<List<ProdutoModel>>> ExcluirProduto(int idProduto)
         {
-            throw new NotImplementedException();
+            ResponseModel<List<ProdutoModel>> resposta = new ResponseModel<List<ProdutoModel>>();
+
+            try
+            {
+                var produto = await _context.Produtos
+                    .FirstOrDefaultAsync(produtoBanco => produtoBanco.Id == idProduto);
+
+                if (produto == null)
+                {
+                    resposta.Mensagem = "Nenhum registro localizado";
+
+                    return resposta;
+                }
+
+                _context.Remove(produto);
+                await _context.SaveChangesAsync();
+
+                resposta.Dados = await _context.Produtos.ToListAsync();
+                resposta.Mensagem = "Produto excluido com sucesso";
+
+                return resposta;
+            }
+            catch (Exception ex) 
+            {
+                resposta.Mensagem = ex.Message;
+                resposta.Status = false;
+
+                return resposta;
+            }
+
         }
 
         public async Task<ResponseModel<List<ProdutoModel>>> ListarProdutos()

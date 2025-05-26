@@ -311,6 +311,32 @@
   },
   {
     "ContainingType": "NutriFlowAPI.Controllers.ProdutoController",
+    "Method": "ExcluirProduto",
+    "RelativePath": "api/Produto/ExcluirProduto",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProduto",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[NutriFlowAPI.Models.ProdutoModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.ProdutoController",
     "Method": "ListarProdutos",
     "RelativePath": "api/Produto/ListarProdutos",
     "HttpMethod": "GET",

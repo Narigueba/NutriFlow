@@ -1,5 +1,23 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\imagens_produtos\740843f1-c608-499a-8b25-d636687c5fd1.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NutriFlowAPI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NutriFlowAPI</BasePath>
+      <RelativePath>imagens_produtos/740843f1-c608-499a-8b25-d636687c5fd1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>wv2ni1dujm</Fingerprint>
+      <Integrity>XLQCCH1dX25TdSyIb/3aGR33qSyz3q2CppKZQa+btCo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\imagens_produtos\740843f1-c608-499a-8b25-d636687c5fd1.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\imagens_produtos\e984e999-1a23-4c81-a0cd-ea9650b16883.png'))">
       <SourceType>Package</SourceType>
       <SourceId>NutriFlowAPI</SourceId>
