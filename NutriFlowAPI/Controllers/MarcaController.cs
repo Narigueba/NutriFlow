@@ -25,7 +25,7 @@ namespace NutriFlowAPI.Controllers
             return Ok(marcas);
         }
 
-        [HttpGet("BuscarMarcaPorId")]
+        [HttpGet("BuscarMarcaPorId/{idMarca}")]
         public async Task<ActionResult<ResponseModel<MarcaModel>>> BuscarMarcaPorId(int idMarca)
         {
             var marca = await _marcaInterface.BuscarMarcaPorId(idMarca);

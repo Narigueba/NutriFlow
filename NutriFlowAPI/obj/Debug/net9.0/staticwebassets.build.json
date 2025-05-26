@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "54hCz54dlxmR838fkhCQNbV0vxf1pgIgO/xlO5fNcUU=",
+  "Hash": "VdVcfeUDsGeSZC2dHGH3IQ6SHbgbntM7itSV8iLu6CI=",
   "Source": "NutriFlowAPI",
   "BasePath": "_content/NutriFlowAPI",
   "Mode": "Default",
@@ -15,6 +15,111 @@
       "Pattern": "**"
     }
   ],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\wwwroot\\imagens_produtos\\e984e999-1a23-4c81-a0cd-ea9650b16883.png",
+      "SourceId": "NutriFlowAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\wwwroot\\",
+      "BasePath": "_content/NutriFlowAPI",
+      "RelativePath": "imagens_produtos/e984e999-1a23-4c81-a0cd-ea9650b16883#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8y0fl9mb9n",
+      "Integrity": "cDSuLLKry3joKlSZePRRLGCp2BWLyGn+b/KOcqnSmkE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens_produtos\\e984e999-1a23-4c81-a0cd-ea9650b16883.png"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "imagens_produtos/e984e999-1a23-4c81-a0cd-ea9650b16883.8y0fl9mb9n.png",
+      "AssetFile": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\wwwroot\\imagens_produtos\\e984e999-1a23-4c81-a0cd-ea9650b16883.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "426605"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cDSuLLKry3joKlSZePRRLGCp2BWLyGn+b/KOcqnSmkE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 17:07:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8y0fl9mb9n"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens_produtos/e984e999-1a23-4c81-a0cd-ea9650b16883.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cDSuLLKry3joKlSZePRRLGCp2BWLyGn+b/KOcqnSmkE="
+        }
+      ]
+    },
+    {
+      "Route": "imagens_produtos/e984e999-1a23-4c81-a0cd-ea9650b16883.png",
+      "AssetFile": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\wwwroot\\imagens_produtos\\e984e999-1a23-4c81-a0cd-ea9650b16883.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "426605"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cDSuLLKry3joKlSZePRRLGCp2BWLyGn+b/KOcqnSmkE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 17:07:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cDSuLLKry3joKlSZePRRLGCp2BWLyGn+b/KOcqnSmkE="
+        }
+      ]
+    }
+  ]
 }

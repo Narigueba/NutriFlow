@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\wwwroot\\imagens_produtos\\e984e999-1a23-4c81-a0cd-ea9650b16883.png",
+      "PackagePath": "staticwebassets\\imagens_produtos\\e984e999-1a23-4c81-a0cd-ea9650b16883.png"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.NutriFlowAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.NutriFlowAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.NutriFlowAPI.props",
+      "PackagePath": "build\\NutriFlowAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.NutriFlowAPI.props",
+      "PackagePath": "buildMultiTargeting\\NutriFlowAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.NutriFlowAPI.props",
+      "PackagePath": "buildTransitive\\NutriFlowAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
