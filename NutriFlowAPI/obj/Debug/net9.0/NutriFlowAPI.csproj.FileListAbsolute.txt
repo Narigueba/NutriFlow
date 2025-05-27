@@ -325,10 +325,10 @@ C:\Users\Guilherme\Desktop\NutriFlow\NutriFlow\NutriFlowAPI\obj\Debug\net9.0\sta
 C:\Users\Guilherme\Desktop\NutriFlow\NutriFlow\NutriFlowAPI\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.NutriFlowAPI.props
 C:\Users\Guilherme\Desktop\NutriFlow\NutriFlow\NutriFlowAPI\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.NutriFlowAPI.props
 C:\Users\Guilherme\Desktop\NutriFlow\NutriFlow\NutriFlowAPI\obj\Debug\net9.0\staticwebassets.pack.json
-C:\Users\Guilherme\Desktop\NutriFlow\NutriFlow\NutriFlowAPI\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\Guilherme\Desktop\NutriFlow\NutriFlow\NutriFlowAPI\obj\Debug\net9.0\NutriFlo.18CF9E09.Up2Date
 C:\Users\Guilherme\Desktop\NutriFlow\NutriFlow\NutriFlowAPI\obj\Debug\net9.0\NutriFlowAPI.dll
 C:\Users\Guilherme\Desktop\NutriFlow\NutriFlow\NutriFlowAPI\obj\Debug\net9.0\refint\NutriFlowAPI.dll
 C:\Users\Guilherme\Desktop\NutriFlow\NutriFlow\NutriFlowAPI\obj\Debug\net9.0\NutriFlowAPI.pdb
 C:\Users\Guilherme\Desktop\NutriFlow\NutriFlow\NutriFlowAPI\obj\Debug\net9.0\NutriFlowAPI.genruntimeconfig.cache
 C:\Users\Guilherme\Desktop\NutriFlow\NutriFlow\NutriFlowAPI\obj\Debug\net9.0\ref\NutriFlowAPI.dll
+C:\Users\Guilherme\Desktop\NutriFlow\NutriFlow\NutriFlowAPI\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
