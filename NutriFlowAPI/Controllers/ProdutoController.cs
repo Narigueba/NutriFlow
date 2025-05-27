@@ -47,5 +47,12 @@ namespace NutriFlowAPI.Controllers
             return Ok(produtos);
         }
 
+        [HttpPut("EditarProduto")]
+        public async Task<ActionResult<ResponseModel<ProdutoModel>>> EditarProduto(ProdutoEdicaoDTO produtoEdicaoDTO)
+        {
+            var produtos = await _produtoInterface.EditarProduto(produtoEdicaoDTO);
+            return Ok(produtos);
+        }
+
     }
 }

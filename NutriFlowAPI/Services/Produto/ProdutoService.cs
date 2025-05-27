@@ -91,9 +91,53 @@ namespace NutriFlowAPI.Services.Produto
             }
         }
 
-        public Task<ResponseModel<List<ProdutoModel>>> EditarProduto(ProdutoEdicaoDTO produtoEdicaoDTO)
+        public async Task<ResponseModel<List<ProdutoModel>>> EditarProduto(ProdutoEdicaoDTO produtoEdicaoDTO)
         {
-            throw new NotImplementedException();
+            ResponseModel<List<ProdutoModel>> resposta = new ResponseModel<List<ProdutoModel>>();
+
+            try
+            {
+                var produto = await _context.Produtos
+                    .FirstOrDefaultAsync(produtoBanco => produtoBanco.Id == produtoEdicaoDTO.Id);
+
+                if (produto == null) 
+                {
+                    resposta.Mensagem = "Nenhum registro localizado";
+
+                    return resposta;
+                }
+
+                produto.Produto = produtoEdicaoDTO.Produto;
+                produto.Ativo = produtoEdicaoDTO.Ativo;
+
+                if (produtoEdicaoDTO.Imagem != null && produtoEdicaoDTO.Imagem.Length > 0)
+                {
+                    var nomeUnico = Guid.NewGuid().ToString() + Path.GetExtension(produtoEdicaoDTO.Imagem.FileName);
+                    var pasta = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "imagens_produtos");
+                    Directory.CreateDirectory(pasta);
+                    var caminhoFisico = Path.Combine(pasta, nomeUnico);
+
+                    using var stream = new FileStream(caminhoFisico, FileMode.Create);
+                    await produtoEdicaoDTO.Imagem.CopyToAsync(stream);
+
+                    produto.Imagem = $"/imagens_produtos/{nomeUnico}";
+                }
+
+                _context.Produtos.Update(produto);
+                await _context.SaveChangesAsync();
+
+                resposta.Dados = await _context.Produtos.ToListAsync();
+                resposta.Mensagem = "Produto editado com sucesso";
+
+                return resposta;
+            }
+            catch (Exception ex)
+            {
+                resposta.Mensagem = ex.Message;
+                resposta.Status = false;
+
+                return resposta;
+            }
         }
 
         public async Task<ResponseModel<List<ProdutoModel>>> ExcluirProduto(int idProduto)
