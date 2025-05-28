@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using NutriFlowAPI.Data;
 using NutriFlowAPI.Services.Categoria;
+using NutriFlowAPI.Services.Estabelecimento;
 using NutriFlowAPI.Services.Marca;
 using NutriFlowAPI.Services.Produto;
 using NutriFlowAPI.Services.Usuario;
@@ -17,6 +18,7 @@ builder.Services.AddScoped<IUsuarioInterface, UsuarioService>();
 builder.Services.AddScoped<ICategoriaInterface, CategoriaService>();
 builder.Services.AddScoped<IMarcaInterface, MarcaService>();
 builder.Services.AddScoped<IProdutoInterface, ProdutoService>();
+builder.Services.AddScoped<IEstabelecimentoInterface, EstabelecimentoService>();
 
 // Conexão com o banco
 builder.Services.AddDbContext<AppDbContext>(options =>
