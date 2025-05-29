@@ -13,32 +13,28 @@ namespace NutriFlowAPI.Services.Estabelecimento
             _context = context;
         }
 
-        public Task<ResponseModel<CategoriaModel>> BuscarEstabelecimentoPorId(int idEstabelecimento)
+        public async Task<ResponseModel<EstabelecimentoModel>> BuscarEstabelecimentoPorId(int idEstabelecimento)
         {
-            throw new NotImplementedException();
-        }
+            ResponseModel<EstabelecimentoModel> resposta = new ResponseModel<EstabelecimentoModel>();
 
-        public async Task<ResponseModel<List<EstabelecimentoModel>>> CriarEstabelecimento(EstabelecimentoCriacaoDTO estabelecimentoCriacaoDTO)
-        {
-            ResponseModel<List<EstabelecimentoModel>> resposta = new ResponseModel<List<EstabelecimentoModel>>();
             try
             {
-                var estabelecimento = new EstabelecimentoModel()
+                var estabelecimento = await _context.Estabelecimentos
+                    .FirstOrDefaultAsync(estabelecimentoBanco => estabelecimentoBanco.Id == idEstabelecimento);
+
+                if (estabelecimento == null) 
                 {
-                    Estabelecimento = estabelecimentoCriacaoDTO.Estabelecimento,
-                    Endereco = estabelecimentoCriacaoDTO.Endereco,
-                    Ativo = estabelecimentoCriacaoDTO.Ativo,
-                };
+                    resposta.Mensagem = "Nenhum registro foi localizado";
 
-                _context.Add(estabelecimento);
-                await _context.SaveChangesAsync();
+                    return resposta;
+                }
 
-                resposta.Dados = await _context.Estabelecimentos.ToListAsync();
-                resposta.Mensagem = "Estabelecimento criado com sucesso!";
+                resposta.Dados = estabelecimento;
+                resposta.Mensagem = "Estabelecimento localizado";
 
                 return resposta;
             }
-            catch (Exception ex)
+            catch (Exception ex) 
             {
                 resposta.Mensagem = ex.Message;
                 resposta.Status = false;
@@ -47,19 +43,129 @@ namespace NutriFlowAPI.Services.Estabelecimento
             }
         }
 
-        public Task<ResponseModel<List<CategoriaModel>>> EditarEstabelecimento(EstabelecimentoEdicaoDTO estabelecimentoEdicaoDTO)
+        public async Task<ResponseModel<List<EstabelecimentoModel>>> CriarEstabelecimento(EstabelecimentoCriacaoDTO estabelecimentoCriacaoDTO)
         {
-            throw new NotImplementedException();
+            ResponseModel<List<EstabelecimentoModel>> resposta = new ResponseModel<List<EstabelecimentoModel>>();
+
+            try
+            {
+                var estabelecimento = new EstabelecimentoModel()
+                {
+                    Estabelecimento = estabelecimentoCriacaoDTO.Estabelecimento,
+                    Endereco = estabelecimentoCriacaoDTO.Endereco,
+                    Ativo = estabelecimentoCriacaoDTO.Ativo
+                };
+
+                _context.Add(estabelecimento);
+                await _context.SaveChangesAsync();
+
+                resposta.Dados = await _context.Estabelecimentos.ToListAsync();
+                resposta.Mensagem = "Estabelecimento criado com sucesso";
+
+                return resposta;
+            }
+            catch (Exception ex) 
+            {
+                resposta.Mensagem = ex.Message;
+                resposta.Status = false;
+
+                return resposta;
+            }
         }
 
-        public Task<ResponseModel<List<CategoriaModel>>> ExcluirEstabelecimento(int idEstabelecimento)
+        public async Task<ResponseModel<List<EstabelecimentoModel>>> EditarEstabelecimento(EstabelecimentoEdicaoDTO estabelecimentoEdicaoDTO)
         {
-            throw new NotImplementedException();
+            ResponseModel<List<EstabelecimentoModel>> resposta = new ResponseModel<List<EstabelecimentoModel>>();
+
+            try
+            {
+                var estabelecimento = await _context.Estabelecimentos
+                    .FirstOrDefaultAsync(estabelecimentoBanco => estabelecimentoBanco.Id == estabelecimentoEdicaoDTO.Id);
+
+                if (estabelecimento == null) 
+                {
+                    resposta.Mensagem = "Nenhum registro localizado";
+
+                    return resposta;
+                }
+
+                estabelecimento.Estabelecimento = estabelecimentoEdicaoDTO.Estabelecimento;
+                estabelecimento.Endereco = estabelecimentoEdicaoDTO.Endereco;
+                estabelecimento.Ativo = estabelecimentoEdicaoDTO.Ativo;
+
+                _context.Update(estabelecimento);
+                await _context.SaveChangesAsync();
+
+                resposta.Dados = await _context.Estabelecimentos.ToListAsync();
+                resposta.Mensagem = "Estabelecimento editado com sucesso";
+
+                return resposta;
+            }
+            catch (Exception ex) 
+            {
+                resposta.Mensagem = ex.Message;
+                resposta.Status = false;
+
+                return resposta;
+            }
         }
 
-        public Task<ResponseModel<List<CategoriaModel>>> ListarEstabelecimentos()
+        public async Task<ResponseModel<List<EstabelecimentoModel>>> ExcluirEstabelecimento(int idEstabelecimento)
         {
-            throw new NotImplementedException();
+            ResponseModel<List<EstabelecimentoModel>> resposta = new ResponseModel<List<EstabelecimentoModel>>();
+
+            try
+            {
+                var estabelecimento = await _context.Estabelecimentos
+                    .FirstOrDefaultAsync(estabelecimentoBanco => estabelecimentoBanco.Id == idEstabelecimento);
+
+                if (estabelecimento == null) 
+                {
+                    resposta.Mensagem = "Nenhum registro localizado";
+
+                    return resposta;
+                }
+
+                _context.Remove(estabelecimento);
+                await _context.SaveChangesAsync();
+
+                resposta.Dados = await _context.Estabelecimentos.ToListAsync();
+                resposta.Mensagem = "Estabelecimento removido com sucesso";
+                
+                return resposta;
+            }
+            catch (Exception ex) 
+            {
+                resposta.Mensagem = ex.Message;
+                resposta.Status = false;
+
+                return resposta;
+            }
+
+        }
+
+        public async Task<ResponseModel<List<EstabelecimentoModel>>> ListarEstabelecimentos()
+        {
+            ResponseModel<List<EstabelecimentoModel>> resposta = new ResponseModel<List<EstabelecimentoModel>>();
+
+
+            try
+            {
+                var estabelecimentos = await _context.Estabelecimentos.ToListAsync();
+
+                resposta.Dados = estabelecimentos;
+                resposta.Mensagem = "Todos os estabelecimentos foram coletados";
+
+                return resposta;
+
+
+            } catch (Exception ex) 
+            {
+                resposta.Mensagem = ex.Message;
+                resposta.Status = false;
+
+                return resposta;
+            }
         }
     }
 }

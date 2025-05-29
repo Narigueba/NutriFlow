@@ -5,10 +5,10 @@ namespace NutriFlowAPI.Services.Estabelecimento
 {
     public interface IEstabelecimentoInterface
     {
-        Task<ResponseModel<List<CategoriaModel>>> ListarEstabelecimentos();
-        Task<ResponseModel<CategoriaModel>> BuscarEstabelecimentoPorId(int idEstabelecimento);
-        Task<ResponseModel<List<CategoriaModel>>> CriarEstabelecimento(EstabelecimentoCriacaoDTO estabelecimentoCriacaoDTO);
-        Task<ResponseModel<List<CategoriaModel>>> ExcluirEstabelecimento(int idEstabelecimento);
-        Task<ResponseModel<List<CategoriaModel>>> EditarEstabelecimento(EstabelecimentoEdicaoDTO estabelecimentoEdicaoDTO);
+        Task<ResponseModel<List<EstabelecimentoModel>>> ListarEstabelecimentos();
+        Task<ResponseModel<EstabelecimentoModel>> BuscarEstabelecimentoPorId(int idEstabelecimento);
+        Task<ResponseModel<List<EstabelecimentoModel>>> CriarEstabelecimento(EstabelecimentoCriacaoDTO estabelecimentoCriacaoDTO);
+        Task<ResponseModel<List<EstabelecimentoModel>>> ExcluirEstabelecimento(int idEstabelecimento);
+        Task<ResponseModel<List<EstabelecimentoModel>>> EditarEstabelecimento(EstabelecimentoEdicaoDTO estabelecimentoEdicaoDTO);
     }
 }
