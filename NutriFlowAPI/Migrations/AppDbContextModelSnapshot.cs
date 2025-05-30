@@ -154,6 +154,10 @@ namespace NutriFlowAPI.Migrations
                     b.Property<bool>("Ativo")
                         .HasColumnType("bit");
 
+                    b.Property<string>("Imagem")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Produto")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

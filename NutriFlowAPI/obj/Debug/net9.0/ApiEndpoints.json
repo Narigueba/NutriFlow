@@ -1,0 +1,771 @@
+[
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.CategoriaController",
+    "Method": "BuscarCategoriaPorId",
+    "RelativePath": "api/Categoria/BuscarCategoriaPorId/{idCategoria}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCategoria",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[NutriFlowAPI.Models.CategoriaModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.CategoriaController",
+    "Method": "CriarCategoria",
+    "RelativePath": "api/Categoria/CriarCategoria",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoriaCriacaoDTO",
+        "Type": "NutriFlowAPI.DTO.Categoria.CategoriaCriacaoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[NutriFlowAPI.Models.CategoriaModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.CategoriaController",
+    "Method": "EditarCategoria",
+    "RelativePath": "api/Categoria/EditarCategoria",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoriaEdicaoDTO",
+        "Type": "NutriFlowAPI.DTO.Categoria.CategoriaEdicaoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[NutriFlowAPI.Models.CategoriaModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.CategoriaController",
+    "Method": "ExcluirCategoria",
+    "RelativePath": "api/Categoria/ExcluirCategoria",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCategoria",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[NutriFlowAPI.Models.CategoriaModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.CategoriaController",
+    "Method": "ListarCategorias",
+    "RelativePath": "api/Categoria/ListarCategorias",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[NutriFlowAPI.Models.CategoriaModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.EstabelecimentoController",
+    "Method": "BuscarEstabelecimentoPorId",
+    "RelativePath": "api/Estabelecimento/BuscarEstabelecimentoPorId/{idEstabelecimento}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idEstabelecimento",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[NutriFlowAPI.Models.EstabelecimentoModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.EstabelecimentoController",
+    "Method": "CriarEstabelecimento",
+    "RelativePath": "api/Estabelecimento/CriarEstabelecimento",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "estabelecimentoCriacaoDTO",
+        "Type": "NutriFlowAPI.DTO.Estabelecimento.EstabelecimentoCriacaoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[NutriFlowAPI.Models.EstabelecimentoModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.EstabelecimentoController",
+    "Method": "EditarEstabelecimento",
+    "RelativePath": "api/Estabelecimento/EditarEstabelecimento",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "estabelecimentoEdicaoDTO",
+        "Type": "NutriFlowAPI.DTO.Estabelecimento.EstabelecimentoEdicaoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[NutriFlowAPI.Models.EstabelecimentoModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.EstabelecimentoController",
+    "Method": "ExcluirEstabelecimento",
+    "RelativePath": "api/Estabelecimento/ExcluirEstabelecimento",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idEstabelecimento",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[NutriFlowAPI.Models.EstabelecimentoModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.EstabelecimentoController",
+    "Method": "ListarEstabelecimentos",
+    "RelativePath": "api/Estabelecimento/ListarEstabelecimentos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[NutriFlowAPI.Models.EstabelecimentoModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.MarcaController",
+    "Method": "BuscarMarcaPorId",
+    "RelativePath": "api/Marca/BuscarMarcaPorId/{idMarca}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idMarca",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[NutriFlowAPI.Models.MarcaModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.MarcaController",
+    "Method": "CriarMarca",
+    "RelativePath": "api/Marca/CriarMarca",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "marcaCriacaoDTO",
+        "Type": "NutriFlowAPI.DTO.Marca.MarcaCriacaoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[NutriFlowAPI.Models.MarcaModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.MarcaController",
+    "Method": "EditarMarca",
+    "RelativePath": "api/Marca/EditarMarca",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "marcaEdicaoDTO",
+        "Type": "NutriFlowAPI.DTO.Marca.MarcaEdicaoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[NutriFlowAPI.Models.MarcaModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.MarcaController",
+    "Method": "ExcluirMarca",
+    "RelativePath": "api/Marca/ExcluirMarca",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idMarca",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[NutriFlowAPI.Models.MarcaModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.MarcaController",
+    "Method": "ListarMarcas",
+    "RelativePath": "api/Marca/ListarMarcas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[NutriFlowAPI.Models.MarcaModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.ProdutoController",
+    "Method": "BuscarProdutoPorId",
+    "RelativePath": "api/Produto/BuscarProdutoPorId/{idProduto}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProduto",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[NutriFlowAPI.Models.ProdutoModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.ProdutoController",
+    "Method": "CriarProduto",
+    "RelativePath": "api/Produto/CriarProduto",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Produto",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Ativo",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Imagem",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[NutriFlowAPI.Models.ProdutoModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.ProdutoController",
+    "Method": "EditarProduto",
+    "RelativePath": "api/Produto/EditarProduto",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Produto",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Ativo",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Imagem",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[NutriFlowAPI.Models.ProdutoModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.ProdutoController",
+    "Method": "ExcluirProduto",
+    "RelativePath": "api/Produto/ExcluirProduto",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProduto",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[NutriFlowAPI.Models.ProdutoModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.ProdutoController",
+    "Method": "ListarProdutos",
+    "RelativePath": "api/Produto/ListarProdutos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[NutriFlowAPI.Models.ProdutoModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.UnidadeMedidaController",
+    "Method": "BuscarUnidadeMedidaPorId",
+    "RelativePath": "api/UnidadeMedida/BuscarUnidadeMedidaPorId/{idUnidadeMedida}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idUnidadeMedida",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[NutriFlowAPI.Models.UnidadeMedidaModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.UnidadeMedidaController",
+    "Method": "CriarUnidadeMedida",
+    "RelativePath": "api/UnidadeMedida/CriarUnidadeMedida",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "unidadeMedidaCriacaoDTO",
+        "Type": "NutriFlowAPI.DTO.UnidadeMedida.UnidadeMedidaCriacaoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[NutriFlowAPI.Models.UnidadeMedidaModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.UnidadeMedidaController",
+    "Method": "EditarUnidadeMedida",
+    "RelativePath": "api/UnidadeMedida/EditarUnidadeMedida",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "unidadeMedidaEdicaoDTO",
+        "Type": "NutriFlowAPI.DTO.UnidadeMedida.UnidadeMedidaEdicaoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[NutriFlowAPI.Models.UnidadeMedidaModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.UnidadeMedidaController",
+    "Method": "ExcluirUnidadeMedida",
+    "RelativePath": "api/UnidadeMedida/ExcluirUnidadeMedida",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idUnidadeMedida",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[NutriFlowAPI.Models.UnidadeMedidaModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.UnidadeMedidaController",
+    "Method": "ListarUnidadesMedidas",
+    "RelativePath": "api/UnidadeMedida/ListarUnidadesMedidas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[NutriFlowAPI.Models.UnidadeMedidaModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.UsuarioController",
+    "Method": "BuscarUsuarioPorId",
+    "RelativePath": "api/Usuario/BuscarUsuarioPorId/{idUsuario}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idUsuario",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[NutriFlowAPI.Models.Usuario.UsuarioModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.UsuarioController",
+    "Method": "CriarUsuario",
+    "RelativePath": "api/Usuario/CriarUsuario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioCriacaoDTO",
+        "Type": "NutriFlowAPI.DTO.Usuario.UsuarioCriacaoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[NutriFlowAPI.Models.Usuario.UsuarioModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.UsuarioController",
+    "Method": "EditarUsuario",
+    "RelativePath": "api/Usuario/EditarUsuario",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioEdicaoDTO",
+        "Type": "NutriFlowAPI.DTO.Usuario.UsuarioEdicaoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[NutriFlowAPI.Models.Usuario.UsuarioModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.UsuarioController",
+    "Method": "ExcluirUsuario",
+    "RelativePath": "api/Usuario/ExcluirUsuario",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idUsuario",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[NutriFlowAPI.Models.Usuario.UsuarioModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.UsuarioController",
+    "Method": "ListarUsuarios",
+    "RelativePath": "api/Usuario/ListarUsuarios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[NutriFlowAPI.Models.Usuario.UsuarioModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

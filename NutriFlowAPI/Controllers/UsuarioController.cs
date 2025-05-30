@@ -35,11 +35,24 @@ namespace NutriFlowAPI.Controllers
         }
 
         [HttpPost("CriarUsuario")]
-        public async Task<ActionResult<ResponseModel<UsuarioModel>>> CriarUsuario(UsuarioCriacaoDTO usuarioCriacaoDTO)
+        public async Task<ActionResult<ResponseModel<List<UsuarioModel>>>> CriarUsuario(UsuarioCriacaoDTO usuarioCriacaoDTO)
         {
             var usuarios = await _usuarioInterface.CriarUsuario(usuarioCriacaoDTO);
             return Ok(usuarios);
         }
 
+        [HttpPut("EditarUsuario")]
+        public async Task<ActionResult<ResponseModel<List<UsuarioModel>>>> EditarUsuario(UsuarioEdicaoDTO usuarioEdicaoDTO)
+        {
+            var usuarios = await _usuarioInterface.EditarUsuario(usuarioEdicaoDTO);
+            return Ok(usuarios);
+        }
+
+        [HttpDelete("ExcluirUsuario")]
+        public async Task<ActionResult<ResponseModel<List<UsuarioModel>>>> ExcluirUsuario(int idUsuario)
+        {
+            var usuarios = await _usuarioInterface.ExcluirUsuario(idUsuario);
+            return Ok(usuarios);
+        }
     }
 }
