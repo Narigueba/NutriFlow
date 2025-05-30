@@ -521,6 +521,130 @@
     ]
   },
   {
+    "ContainingType": "NutriFlowAPI.Controllers.UnidadeMedidaController",
+    "Method": "BuscarUnidadeMedidaPorId",
+    "RelativePath": "api/UnidadeMedida/BuscarUnidadeMedidaPorId/{idUnidadeMedida}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idUnidadeMedida",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[NutriFlowAPI.Models.UnidadeMedidaModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.UnidadeMedidaController",
+    "Method": "CriarUnidadeMedida",
+    "RelativePath": "api/UnidadeMedida/CriarUnidadeMedida",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "unidadeMedidaCriacaoDTO",
+        "Type": "NutriFlowAPI.DTO.UnidadeMedida.UnidadeMedidaCriacaoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[NutriFlowAPI.Models.UnidadeMedidaModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.UnidadeMedidaController",
+    "Method": "EditarUnidadeMedida",
+    "RelativePath": "api/UnidadeMedida/EditarUnidadeMedida",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "unidadeMedidaEdicaoDTO",
+        "Type": "NutriFlowAPI.DTO.UnidadeMedida.UnidadeMedidaEdicaoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[NutriFlowAPI.Models.UnidadeMedidaModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.UnidadeMedidaController",
+    "Method": "ExcluirUnidadeMedida",
+    "RelativePath": "api/UnidadeMedida/ExcluirUnidadeMedida",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idUnidadeMedida",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[NutriFlowAPI.Models.UnidadeMedidaModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NutriFlowAPI.Controllers.UnidadeMedidaController",
+    "Method": "ListarUnidadesMedidas",
+    "RelativePath": "api/UnidadeMedida/ListarUnidadesMedidas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "NutriFlowAPI.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[NutriFlowAPI.Models.UnidadeMedidaModel, NutriFlowAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "NutriFlowAPI.Controllers.UsuarioController",
     "Method": "BuscarUsuarioPorId",
     "RelativePath": "api/Usuario/BuscarUsuarioPorId/{idUsuario}",

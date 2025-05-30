@@ -4,6 +4,7 @@ using NutriFlowAPI.Services.Categoria;
 using NutriFlowAPI.Services.Estabelecimento;
 using NutriFlowAPI.Services.Marca;
 using NutriFlowAPI.Services.Produto;
+using NutriFlowAPI.Services.UnidadeMedida;
 using NutriFlowAPI.Services.Usuario;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -19,6 +20,7 @@ builder.Services.AddScoped<ICategoriaInterface, CategoriaService>();
 builder.Services.AddScoped<IMarcaInterface, MarcaService>();
 builder.Services.AddScoped<IProdutoInterface, ProdutoService>();
 builder.Services.AddScoped<IEstabelecimentoInterface, EstabelecimentoService>();
+builder.Services.AddScoped<IUnidadeMedidaInterface, UnidadeMedidaService>();
 
 // Conexão com o banco
 builder.Services.AddDbContext<AppDbContext>(options =>
