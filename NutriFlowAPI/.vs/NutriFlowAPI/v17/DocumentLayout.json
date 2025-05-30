@@ -1,28 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{9CB4DF96-1052-4D7F-BE60-5D3030738207}|NutriFlowAPI.csproj|c:\\users\\guilherme\\desktop\\nutriflow\\nutriflow\\nutriflowapi\\controllers\\estabelecimentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CB4DF96-1052-4D7F-BE60-5D3030738207}|NutriFlowAPI.csproj|solutionrelative:controllers\\estabelecimentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9CB4DF96-1052-4D7F-BE60-5D3030738207}|NutriFlowAPI.csproj|c:\\users\\guilherme\\desktop\\nutriflow\\nutriflow\\nutriflowapi\\services\\estabelecimento\\estabelecimentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CB4DF96-1052-4D7F-BE60-5D3030738207}|NutriFlowAPI.csproj|solutionrelative:services\\estabelecimento\\estabelecimentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9CB4DF96-1052-4D7F-BE60-5D3030738207}|NutriFlowAPI.csproj|c:\\users\\guilherme\\desktop\\nutriflow\\nutriflow\\nutriflowapi\\dto\\estabelecimento\\estabelecimentocriacaodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CB4DF96-1052-4D7F-BE60-5D3030738207}|NutriFlowAPI.csproj|solutionrelative:dto\\estabelecimento\\estabelecimentocriacaodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9CB4DF96-1052-4D7F-BE60-5D3030738207}|NutriFlowAPI.csproj|c:\\users\\guilherme\\desktop\\nutriflow\\nutriflow\\nutriflowapi\\services\\estabelecimento\\iestabelecimentointerface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CB4DF96-1052-4D7F-BE60-5D3030738207}|NutriFlowAPI.csproj|solutionrelative:services\\estabelecimento\\iestabelecimentointerface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9CB4DF96-1052-4D7F-BE60-5D3030738207}|NutriFlowAPI.csproj|c:\\users\\guilherme\\desktop\\nutriflow\\nutriflow\\nutriflowapi\\dto\\estabelecimento\\estabelecimentoedicaodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CB4DF96-1052-4D7F-BE60-5D3030738207}|NutriFlowAPI.csproj|solutionrelative:dto\\estabelecimento\\estabelecimentoedicaodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -30,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -39,71 +18,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EstabelecimentoController.cs",
-              "DocumentMoniker": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\Controllers\\EstabelecimentoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\EstabelecimentoController.cs",
-              "ToolTip": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\Controllers\\EstabelecimentoController.cs",
-              "RelativeToolTip": "Controllers\\EstabelecimentoController.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAYwDAAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T17:04:13.31Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EstabelecimentoService.cs",
-              "DocumentMoniker": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\Services\\Estabelecimento\\EstabelecimentoService.cs",
-              "RelativeDocumentMoniker": "Services\\Estabelecimento\\EstabelecimentoService.cs",
-              "ToolTip": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\Services\\Estabelecimento\\EstabelecimentoService.cs",
-              "RelativeToolTip": "Services\\Estabelecimento\\EstabelecimentoService.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAIwGUAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T16:48:56.602Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IEstabelecimentoInterface.cs",
-              "DocumentMoniker": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\Services\\Estabelecimento\\IEstabelecimentoInterface.cs",
-              "RelativeDocumentMoniker": "Services\\Estabelecimento\\IEstabelecimentoInterface.cs",
-              "ToolTip": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\Services\\Estabelecimento\\IEstabelecimentoInterface.cs",
-              "RelativeToolTip": "Services\\Estabelecimento\\IEstabelecimentoInterface.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T17:02:35.374Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EstabelecimentoCriacaoDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\DTO\\Estabelecimento\\EstabelecimentoCriacaoDTO.cs",
-              "RelativeDocumentMoniker": "DTO\\Estabelecimento\\EstabelecimentoCriacaoDTO.cs",
-              "ToolTip": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\DTO\\Estabelecimento\\EstabelecimentoCriacaoDTO.cs",
-              "RelativeToolTip": "DTO\\Estabelecimento\\EstabelecimentoCriacaoDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T16:56:26.344Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EstabelecimentoEdicaoDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\DTO\\Estabelecimento\\EstabelecimentoEdicaoDTO.cs",
-              "RelativeDocumentMoniker": "DTO\\Estabelecimento\\EstabelecimentoEdicaoDTO.cs",
-              "ToolTip": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\DTO\\Estabelecimento\\EstabelecimentoEdicaoDTO.cs",
-              "RelativeToolTip": "DTO\\Estabelecimento\\EstabelecimentoEdicaoDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T16:56:35.696Z",
-              "EditorCaption": ""
             }
           ]
         }
