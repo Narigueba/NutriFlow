@@ -17,7 +17,7 @@ namespace NutriFlowAPI.Models
         public decimal Preco {  get; set; }
         public EstabelecimentoModel Estabelecimento { get; set; }
         public DateTime DataRegistro { get; set; } = DateTime.Now;
-        public DateTime DataValidade {  get; set; }
+        public DateTime? DataValidade {  get; set; }
         public string? Descricao { get; set; }
         public bool Ativo {  get; set; }
     }

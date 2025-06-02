@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using NutriFlowAPI.Data;
 using NutriFlowAPI.Services.Categoria;
 using NutriFlowAPI.Services.Estabelecimento;
+using NutriFlowAPI.Services.EstoqueProduto;
 using NutriFlowAPI.Services.Marca;
 using NutriFlowAPI.Services.Produto;
 using NutriFlowAPI.Services.UnidadeMedida;
@@ -21,6 +22,7 @@ builder.Services.AddScoped<IMarcaInterface, MarcaService>();
 builder.Services.AddScoped<IProdutoInterface, ProdutoService>();
 builder.Services.AddScoped<IEstabelecimentoInterface, EstabelecimentoService>();
 builder.Services.AddScoped<IUnidadeMedidaInterface, UnidadeMedidaService>();
+builder.Services.AddScoped<IEstoqueProcutoInterface, EstoqueProdutoService>();
 
 // Conexão com o banco
 builder.Services.AddDbContext<AppDbContext>(options =>

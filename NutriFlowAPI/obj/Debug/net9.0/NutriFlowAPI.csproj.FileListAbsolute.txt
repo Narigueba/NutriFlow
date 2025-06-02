@@ -331,4 +331,3 @@ C:\Users\Guilherme\Desktop\NutriFlow\NutriFlow\NutriFlowAPI\obj\Debug\net9.0\ref
 C:\Users\Guilherme\Desktop\NutriFlow\NutriFlow\NutriFlowAPI\obj\Debug\net9.0\NutriFlowAPI.pdb
 C:\Users\Guilherme\Desktop\NutriFlow\NutriFlow\NutriFlowAPI\obj\Debug\net9.0\NutriFlowAPI.genruntimeconfig.cache
 C:\Users\Guilherme\Desktop\NutriFlow\NutriFlow\NutriFlowAPI\obj\Debug\net9.0\ref\NutriFlowAPI.dll
-C:\Users\Guilherme\Desktop\NutriFlow\NutriFlow\NutriFlowAPI\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
