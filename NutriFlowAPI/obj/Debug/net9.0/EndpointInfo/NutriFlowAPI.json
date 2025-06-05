@@ -413,6 +413,35 @@
         }
       }
     },
+    "/api/EstoqueProduto/ListarEstoqueProduto": {
+      "get": {
+        "tags": [
+          "EstoqueProduto"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/EstoqueProdutoDTOListResponseModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EstoqueProdutoDTOListResponseModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EstoqueProdutoDTOListResponseModel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Marca/ListarMarcas": {
       "get": {
         "tags": [
@@ -1474,6 +1503,104 @@
         },
         "additionalProperties": false
       },
+      "EstoqueProdutoDTO": {
+        "type": "object",
+        "properties": {
+          "usuarioId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nomeUsuario": {
+            "type": "string",
+            "nullable": true
+          },
+          "categoriaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nomeCategoria": {
+            "type": "string",
+            "nullable": true
+          },
+          "produtoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nomeProduto": {
+            "type": "string",
+            "nullable": true
+          },
+          "marcaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nomeMarca": {
+            "type": "string",
+            "nullable": true
+          },
+          "quantidade": {
+            "type": "number",
+            "format": "double"
+          },
+          "unidadeMedidaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nomeUnidadeMedida": {
+            "type": "string",
+            "nullable": true
+          },
+          "preco": {
+            "type": "number",
+            "format": "double"
+          },
+          "estabelecimentoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nomeEstabelecimento": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataRegisto": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dataValidade": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "descricao": {
+            "type": "string",
+            "nullable": true
+          },
+          "ativo": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EstoqueProdutoDTOListResponseModel": {
+        "type": "object",
+        "properties": {
+          "dados": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/EstoqueProdutoDTO"
+            },
+            "nullable": true
+          },
+          "mensagem": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
       "EstoqueProdutoModel": {
         "type": "object",
         "properties": {
@@ -1513,7 +1640,8 @@
           },
           "dataValidade": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "descricao": {
             "type": "string",

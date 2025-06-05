@@ -22,7 +22,7 @@ builder.Services.AddScoped<IMarcaInterface, MarcaService>();
 builder.Services.AddScoped<IProdutoInterface, ProdutoService>();
 builder.Services.AddScoped<IEstabelecimentoInterface, EstabelecimentoService>();
 builder.Services.AddScoped<IUnidadeMedidaInterface, UnidadeMedidaService>();
-builder.Services.AddScoped<IEstoqueProcutoInterface, EstoqueProdutoService>();
+builder.Services.AddScoped<IEstoqueProdutoInterface, EstoqueProdutoService>();
 
 // Conexão com o banco
 builder.Services.AddDbContext<AppDbContext>(options =>
