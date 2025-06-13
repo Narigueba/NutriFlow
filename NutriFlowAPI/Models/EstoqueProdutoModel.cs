@@ -7,8 +7,8 @@ namespace NutriFlowAPI.Models
     {
         [Key]
 
-        public UsuarioModel Usuario { get; set; }
         public int Id { get; set; }
+        public UsuarioModel Usuario { get; set; }
         public CategoriaModel Categoria { get; set; }
         public ProdutoModel Produto { get; set; }
         public MarcaModel Marca { get; set; }

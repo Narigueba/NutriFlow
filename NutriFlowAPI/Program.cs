@@ -24,6 +24,9 @@ builder.Services.AddScoped<IEstabelecimentoInterface, EstabelecimentoService>();
 builder.Services.AddScoped<IUnidadeMedidaInterface, UnidadeMedidaService>();
 builder.Services.AddScoped<IEstoqueProdutoInterface, EstoqueProdutoService>();
 
+builder.Services.AddControllers()
+    .AddJsonOptions(x =>
+        x.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles);
 // Conexão com o banco
 builder.Services.AddDbContext<AppDbContext>(options =>
 {

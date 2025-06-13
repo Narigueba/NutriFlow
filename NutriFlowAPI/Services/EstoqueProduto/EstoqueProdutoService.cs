@@ -13,58 +13,92 @@ namespace NutriFlowAPI.Services.EstoqueProduto
             _context = context;
         }
 
-        public async Task<ResponseModel<List<EstoqueProdutoModel>>> CriarEstoqueProduto(EstoqueProdutoCriacaoDTO estoqueProdutoCriacaoDTO)
+        public async Task<ResponseModel<EstoqueProdutoModel>> BuscarEstoquePorId(int idEstoqueProduto)
         {
-            ResponseModel<List<EstoqueProdutoModel>> resposta = new ResponseModel<List<EstoqueProdutoModel>>();
+            ResponseModel<EstoqueProdutoModel> resposta = new ResponseModel<EstoqueProdutoModel>();
 
             try
             {
-                // Verificar se os registros relacionados existem
-                var usuario = await _context.Usuarios.FindAsync(estoqueProdutoCriacaoDTO.UsuarioId);
-                var categoria = await _context.Categorias.FindAsync(estoqueProdutoCriacaoDTO.CategoriaId);
-                var produto = await _context.Produtos.FindAsync(estoqueProdutoCriacaoDTO.ProdutoId);
-                var marca = await _context.Marcas.FindAsync(estoqueProdutoCriacaoDTO.MarcaId);
-                var unidade = await _context.UnidadeMedidas.FindAsync(estoqueProdutoCriacaoDTO.UnidadeMedidaId);
-                var estabelecimento = await _context.Estabelecimentos.FindAsync(estoqueProdutoCriacaoDTO.EstabelecimentoId);
+                var estoque = await _context.EstoqueProdutos
+                            .Include(e => e.Produto)
+                            .Include(e => e.Categoria)
+                            .Include(e => e.Marca)
+                            .Include(e => e.Usuario)
+                            .Include(e => e.Estabelecimento)
+                            .Include(e => e.UnidadeMedida)
+                            .FirstOrDefaultAsync(e => e.Id == idEstoqueProduto);
 
-                if (usuario == null || categoria == null || produto == null || marca == null || unidade == null || estabelecimento == null)
+                if (estoque == null)
                 {
-                    resposta.Mensagem = "Um ou mais IDs fornecidos não existem.";
-                 
+                    resposta.Mensagem = "Estoque não encontrado.";
                     return resposta;
                 }
 
-                // Criar o objeto
+                resposta.Dados = estoque;
+                resposta.Mensagem = "Estoque localizado com sucesso.";
+                resposta.Status = true;
+
+                return resposta;
+            }
+            catch (Exception ex) 
+            {
+                resposta.Mensagem = ex.Message;
+                resposta.Status = false;
+
+                return resposta;
+            }
+        }
+
+        public async Task<ResponseModel<EstoqueProdutoModel>> CriarEstoqueProduto(EstoqueProdutoCriacaoDTO dto)
+        {
+            var resposta = new ResponseModel<EstoqueProdutoModel>();
+
+            try
+            {
+                var usuario = await _context.Usuarios.FindAsync(dto.UsuarioId);
+                var produto = await _context.Produtos.FindAsync(dto.ProdutoId);
+                var categoria = await _context.Categorias.FindAsync(dto.CategoriaId);
+                var marca = await _context.Marcas.FindAsync(dto.MarcaId);
+                var unidade = await _context.UnidadeMedidas.FindAsync(dto.UnidadeMedidaId);
+                var estabelecimento = await _context.Estabelecimentos.FindAsync(dto.EstabelecimentoId);
+
+                if (usuario == null || produto == null || categoria == null || marca == null || unidade == null || estabelecimento == null)
+                {
+                    resposta.Status = false;
+                    resposta.Mensagem = "Um ou mais IDs são inválidos.";
+                    return resposta;
+                }
+
                 var novoEstoque = new EstoqueProdutoModel
                 {
                     Usuario = usuario,
-                    Categoria = categoria,
                     Produto = produto,
+                    Categoria = categoria,
                     Marca = marca,
-                    Quantidade = estoqueProdutoCriacaoDTO.Quantidade,
+                    Quantidade = dto.Quantidade,
                     UnidadeMedida = unidade,
-                    Preco = estoqueProdutoCriacaoDTO.Preco,
+                    Preco = dto.Preco,
                     Estabelecimento = estabelecimento,
-                    DataValidade = estoqueProdutoCriacaoDTO.DataValidade,
-                    Descricao = estoqueProdutoCriacaoDTO.Descricao,
-                    Ativo = estoqueProdutoCriacaoDTO.Ativo,
+                    DataValidade = dto.DataValidade,
+                    Descricao = dto.Descricao,
+                    Ativo = dto.Ativo,
                     DataRegistro = DateTime.Now
                 };
 
-                // Adicionar ao banco
                 _context.EstoqueProdutos.Add(novoEstoque);
                 await _context.SaveChangesAsync();
 
-                resposta.Dados = await _context.EstoqueProdutos.ToListAsync();
-                resposta.Mensagem = "Produto de estoque criado com sucesso.";
+                resposta.Status = true;
+                resposta.Mensagem = "Produto adicionado ao estoque com sucesso.";
+                resposta.Dados = novoEstoque;
+                
 
                 return resposta;
             }
             catch (Exception ex)
             {
                 resposta.Status = false;
-                resposta.Mensagem = $"Erro ao criar o produto: {ex.Message}";
-                
+                resposta.Mensagem = $"Erro: {ex.Message}";
                 return resposta;
             }
         }
@@ -74,10 +108,39 @@ namespace NutriFlowAPI.Services.EstoqueProduto
             throw new NotImplementedException();
         }
 
-        public Task<ResponseModel<List<EstoqueProdutoModel>>> ExcluirEstoqueProduto(int idEstoqueProduto)
+        public async Task<ResponseModel<List<EstoqueProdutoModel>>> ExcluirEstoqueProduto(int idEstoqueProduto)
         {
-            throw new NotImplementedException();
+            ResponseModel<List<EstoqueProdutoModel>> resposta = new ResponseModel<List<EstoqueProdutoModel>>();
+
+            try
+            {
+                var estoque = await _context.EstoqueProdutos
+                              .FirstOrDefaultAsync(estoqueProdutoBanco => estoqueProdutoBanco.Id == idEstoqueProduto);
+
+                if (estoque == null)
+                {
+                    resposta.Mensagem = "Produto não encontrado no estoque.";
+
+                    return resposta;
+                }
+
+                _context.Remove(estoque);
+                await _context.SaveChangesAsync();
+
+                resposta.Dados = await _context.EstoqueProdutos.ToListAsync();
+                resposta.Mensagem = "Produto removido do estoque com sucesso";
+
+                return resposta;
+            }
+            catch (Exception ex)
+            {
+                resposta.Mensagem = ex.Message;
+                resposta.Status = false;
+
+                return resposta;
+            }
         }
+    
 
         public async Task<ResponseModel<List<EstoqueProdutoModel>>> ListarEstoqueProduto()
         {

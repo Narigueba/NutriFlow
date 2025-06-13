@@ -2,6 +2,8 @@
 {
     public class EstoqueProdutoDTO
     {
+
+        public int Id { get; set; }
         public int UsuarioId { get; set; }
         public string Usuario { get; set; } // ← novo
 
