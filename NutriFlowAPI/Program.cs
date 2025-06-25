@@ -24,10 +24,14 @@ builder.Services.AddScoped<IEstabelecimentoInterface, EstabelecimentoService>();
 builder.Services.AddScoped<IUnidadeMedidaInterface, UnidadeMedidaService>();
 builder.Services.AddScoped<IEstoqueProdutoInterface, EstoqueProdutoService>();
 
+<<<<<<< Updated upstream
 builder.Services.AddControllers()
     .AddJsonOptions(x =>
         x.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles);
 // Conexão com o banco
+=======
+// Conexão com SQL Server
+>>>>>>> Stashed changes
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
