@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adicionar - NutriFlow</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="controle.css" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body id="controle">
+  <header class="app-header">NutriFlow</header>
+  <div class="centered-form-container">
+    <form class="form-card">
+      <h2>Adicionar</h2>
+      <select required>
+        <option value="">Selecione...</option>
+        <option value="categoria">Categoria</option>
+        <option value="produto">Produto</option>
+        <option value="receita">Receita</option>
+      </select>
+      <input type="text" placeholder="Nome" required />
+      <div class="image-upload-row">
+        <span class="image-placeholder">Imagem</span>
+        <label class="upload-btn">
+          Upload
+          <input type="file" accept="image/*" style="display: none;" />
+        </label>
+      </div>
+      <button class="confirm-btn" type="submit">Confirmar</button>
+    </form>
+  </div>
+  <footer class="bottom-nav">
+    <a href="index.html" class="nav-link"><i class="lucide" data-lucide="home"></i></a>
+    <a href="estoque.html" class="nav-link"><i class="lucide" data-lucide="package"></i></a>
+    <a href="controle.html" class="nav-link active"><i class="lucide" data-lucide="plus-circle"></i></a>
+    <a href="notificacao.html" class="nav-link"><i class="lucide" data-lucide="bell"></i></a>
+    <a href="login.html" class="nav-link"><i class="lucide" data-lucide="user"></i></a>
+  </footer>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
