@@ -5153,11 +5153,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\projetos\\nutriflow\\NutriFlow\\NutriFlowAPI\\NutriFlowAPI.csproj",
+      "projectUniqueName": "D:\\projetos\\nutriflow\\NutriFlow\\nutriflowapi\\NutriFlowAPI.csproj",
       "projectName": "NutriFlowAPI",
-      "projectPath": "D:\\projetos\\nutriflow\\NutriFlow\\NutriFlowAPI\\NutriFlowAPI.csproj",
+      "projectPath": "D:\\projetos\\nutriflow\\NutriFlow\\nutriflowapi\\NutriFlowAPI.csproj",
       "packagesPath": "C:\\Users\\arthu\\.nuget\\packages\\",
-      "outputPath": "D:\\projetos\\nutriflow\\NutriFlow\\NutriFlowAPI\\obj\\",
+      "outputPath": "D:\\projetos\\nutriflow\\NutriFlow\\nutriflowapi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\arthu\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -5234,11 +5234,7 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< Updated upstream
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.107/PortableRuntimeIdentifierGraph.json"
-=======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
->>>>>>> Stashed changes
       }
     }
   }

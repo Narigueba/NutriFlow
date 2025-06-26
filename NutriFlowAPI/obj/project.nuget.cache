@@ -1,12 +1,8 @@
 {
   "version": 2,
-<<<<<<< Updated upstream
-  "dgSpecHash": "va5AosNgM74=",
-=======
-  "dgSpecHash": "F1FCHnyB3Tk=",
->>>>>>> Stashed changes
+  "dgSpecHash": "dwzO/W/aiqA=",
   "success": true,
-  "projectFilePath": "D:\\projetos\\nutriflow\\NutriFlow\\nutriflowapi\\NutriFlowAPI.csproj",
+  "projectFilePath": "D:\\projetos\\nutriflow\\NutriFlow\\NutriFlowAPI\\NutriFlowAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\arthu\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\arthu\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

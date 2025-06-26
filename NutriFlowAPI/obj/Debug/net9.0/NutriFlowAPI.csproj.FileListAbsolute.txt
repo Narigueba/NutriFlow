@@ -488,6 +488,15 @@ D:\projetos\nutriflow\NutriFlow\nutriflowapi\obj\Debug\net9.0\rjimswa.dswa.cache
 D:\projetos\nutriflow\NutriFlow\nutriflowapi\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 D:\projetos\nutriflow\NutriFlow\nutriflowapi\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
 D:\projetos\nutriflow\NutriFlow\nutriflowapi\obj\Debug\net9.0\scopedcss\bundle\NutriFlowAPI.styles.css
+D:\projetos\nutriflow\NutriFlow\nutriflowapi\obj\Debug\net9.0\compressed\thyajjpvp3-1klg058lry.gz
+D:\projetos\nutriflow\NutriFlow\nutriflowapi\obj\Debug\net9.0\compressed\nkvz5kr500-kq5cza6l78.gz
+D:\projetos\nutriflow\NutriFlow\nutriflowapi\obj\Debug\net9.0\compressed\j1xoeff8ud-ppz7ztquei.gz
+D:\projetos\nutriflow\NutriFlow\nutriflowapi\obj\Debug\net9.0\compressed\xihfeyiper-o78g9mr0n8.gz
+D:\projetos\nutriflow\NutriFlow\nutriflowapi\obj\Debug\net9.0\compressed\gadsqvmb2d-n5sns0qow9.gz
+D:\projetos\nutriflow\NutriFlow\nutriflowapi\obj\Debug\net9.0\compressed\mshwbzxr50-wphwviqldm.gz
+D:\projetos\nutriflow\NutriFlow\nutriflowapi\obj\Debug\net9.0\compressed\2rcppawfcl-def2t2afus.gz
+D:\projetos\nutriflow\NutriFlow\nutriflowapi\obj\Debug\net9.0\compressed\ejyi48c9ex-1iznktisac.gz
+D:\projetos\nutriflow\NutriFlow\nutriflowapi\obj\Debug\net9.0\compressed\k5dxlho58i-gxabm24s98.gz
 D:\projetos\nutriflow\NutriFlow\nutriflowapi\obj\Debug\net9.0\staticwebassets.build.json
 D:\projetos\nutriflow\NutriFlow\nutriflowapi\obj\Debug\net9.0\staticwebassets.build.json.cache
 D:\projetos\nutriflow\NutriFlow\nutriflowapi\obj\Debug\net9.0\staticwebassets.development.json
