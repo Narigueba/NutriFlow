@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrar - NutriFlow</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body id="login">
+    <header class="app-header">
+      <h1>NutriFlow</h1>
+    </header>
+
+  <div class="centered-form-container">
+    <form class="form-card" id="login-form">
+      <h2>Entrar</h2>
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Senha" required />
+      <button class="confirm-btn" type="submit">Confirmar</button>
+      <div class="form-links">
+        <a href="#">Esqueceu sua senha?</a>
+        <a href="registro.html">Registre-se</a>
+      </div>
+    </form>
+  </div>
+  <footer class="bottom-nav">
+      <a href="home.html" class="nav-link "><i class="lucide" data-lucide="home"></i></a>
+      <a href="estoque.html" class="nav-link"><i class="lucide" data-lucide="package"></i></a>
+      <a href="controle.html" class="nav-link"><i class="lucide" data-lucide="plus-circle"></i></a>
+      <a href="notificacao.html" class="nav-link"><i class="lucide" data-lucide="bell"></i></a>
+      <a href="login.html" class="nav-link active"><i class="lucide" data-lucide="user"></i></a>
+    </footer>
+    <script src="js/script.js"></script>
+  <script src="js/usuario.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

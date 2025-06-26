@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NutriFlow</title>
+    <!-- Lucide Icons -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body id="home">
+    <header class="app-header">
+      <h1>NutriFlow</h1>
+    </header>
+
+    <nav class="top-buttons">
+      <button><i class="lucide" data-lucide="user"></i> Seguindo</button>
+      <button><i class="lucide" data-lucide="heart"></i> Favoritos</button>
+      <button><i class="lucide" data-lucide="clock"></i> Recentes</button>
+    </nav>
+
+    <!-- Carrossel de Banner -->
+    <section class="banner carousel">
+      <div class="slides">
+        <div class="slide slide-1"></div>
+        <div class="slide slide-2"></div>
+        <div class="slide slide-3"></div>
+      </div>
+      <div class="indicators">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">Produtos</div>
+      <div class="product-list">
+        <div class="product-card">
+          <img src="img/alho.png" alt="Alho" />
+          <span>Alho</span>
+        </div>
+        <div class="product-card">
+          <img src="img/cenoura.png" alt="Cenoura" />
+          <span>Cenoura</span>
+        </div>
+        <div class="product-card">
+          <img src="img/alface.png" alt="Alface" />
+          <span>Alface</span>
+        </div>
+        <!-- ... outros cards ... -->
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">Categorias</div>
+      <div class="category-list">
+        <div class="category-card">
+          <img src="img/receitas.png" alt="Receitas" />
+          <span>Receitas</span>
+        </div>
+        <div class="category-card">
+          <img src="img/proteinas.png" alt="Proteinas" />
+          <span>Proteínas</span>
+        </div>
+        <div class="category-card">
+          <img src="img/sucos.png" alt="Liquidos" />
+          <span>Líquidos</span>
+        </div>
+        <!-- ... outras categorias ... -->
+      </div>
+    </section>
+
+    <footer class="bottom-nav">
+      <a href="home.html" class="nav-link active"><i class="lucide" data-lucide="home"></i></a>
+      <a href="estoque.html" class="nav-link"><i class="lucide" data-lucide="package"></i></a>
+      <a href="controle.html" class="nav-link"><i class="lucide" data-lucide="plus-circle"></i></a>
+      <a href="notificacao.html" class="nav-link"><i class="lucide" data-lucide="bell"></i></a>
+      <a href="login.html" class="nav-link"><i class="lucide" data-lucide="user"></i></a>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+    <script src="js/carrossel.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

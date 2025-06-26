@@ -1,7 +1,0 @@
-V trocar lupa por armazenamento homepage
-# criar front de todas as abas homepage
-#homepage secao receitas
-##armazenamento:
-#lista de itens cadastrados (estoque, marca, categoria, idCompra)
-#icone add item direita-cima (add produto, formularios,data, preco)
-#icone editar item esquerda-cima (lista dos produtos existentes e add ou editar estoque,marca,categoria,idCompra)

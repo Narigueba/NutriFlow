@@ -17,7 +17,7 @@ namespace NutriFlowAPI.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "9.0.4")
+                .HasAnnotation("ProductVersion", "9.0.6")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -80,7 +80,7 @@ namespace NutriFlowAPI.Migrations
                     b.Property<DateTime>("DataRegistro")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("DataValidade")
+                    b.Property<DateTime?>("DataValidade")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Descricao")
