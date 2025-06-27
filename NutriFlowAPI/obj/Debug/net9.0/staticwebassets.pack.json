@@ -1,24 +1,60 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\wwwroot\\imagens_produtos\\0217107e-fe7b-421b-9979-76394685a0fd.png",
-      "PackagePath": "staticwebassets\\imagens_produtos\\0217107e-fe7b-421b-9979-76394685a0fd.png"
+      "Id": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\nutriflow\\nutriflowapi\\wwwroot\\estoque.html",
+      "PackagePath": "staticwebassets\\estoque.html"
     },
     {
-      "Id": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\wwwroot\\imagens_produtos\\740843f1-c608-499a-8b25-d636687c5fd1.jpg",
-      "PackagePath": "staticwebassets\\imagens_produtos\\740843f1-c608-499a-8b25-d636687c5fd1.jpg"
+      "Id": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\nutriflow\\nutriflowapi\\wwwroot\\img\\alface.png",
+      "PackagePath": "staticwebassets\\img\\alface.png"
     },
     {
-      "Id": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\wwwroot\\imagens_produtos\\d54a80e9-2018-48d3-b968-8a06b01ae284.png",
-      "PackagePath": "staticwebassets\\imagens_produtos\\d54a80e9-2018-48d3-b968-8a06b01ae284.png"
+      "Id": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\nutriflow\\nutriflowapi\\wwwroot\\img\\alho.png",
+      "PackagePath": "staticwebassets\\img\\alho.png"
     },
     {
-      "Id": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\wwwroot\\imagens_produtos\\e984e999-1a23-4c81-a0cd-ea9650b16883.png",
-      "PackagePath": "staticwebassets\\imagens_produtos\\e984e999-1a23-4c81-a0cd-ea9650b16883.png"
+      "Id": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\nutriflow\\nutriflowapi\\wwwroot\\img\\banner1.png",
+      "PackagePath": "staticwebassets\\img\\banner1.png"
     },
     {
-      "Id": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\NutriFlow\\NutriFlowAPI\\wwwroot\\imagens_produtos\\f11f7b90-3853-48ed-896a-f1caf04d9dd5.png",
-      "PackagePath": "staticwebassets\\imagens_produtos\\f11f7b90-3853-48ed-896a-f1caf04d9dd5.png"
+      "Id": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\nutriflow\\nutriflowapi\\wwwroot\\img\\banner2.png",
+      "PackagePath": "staticwebassets\\img\\banner2.png"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\nutriflow\\nutriflowapi\\wwwroot\\img\\banner3.png",
+      "PackagePath": "staticwebassets\\img\\banner3.png"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\nutriflow\\nutriflowapi\\wwwroot\\img\\cenoura.png",
+      "PackagePath": "staticwebassets\\img\\cenoura.png"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\nutriflow\\nutriflowapi\\wwwroot\\img\\proteinas.png",
+      "PackagePath": "staticwebassets\\img\\proteinas.png"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\nutriflow\\nutriflowapi\\wwwroot\\img\\receitas.png",
+      "PackagePath": "staticwebassets\\img\\receitas.png"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\nutriflow\\nutriflowapi\\wwwroot\\img\\sucos.png",
+      "PackagePath": "staticwebassets\\img\\sucos.png"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\nutriflow\\nutriflowapi\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\nutriflow\\nutriflowapi\\wwwroot\\js\\carrossel.js",
+      "PackagePath": "staticwebassets\\js\\carrossel.js"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\nutriflow\\nutriflowapi\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme\\Desktop\\NutriFlow\\nutriflow\\nutriflowapi\\wwwroot\\styles.css",
+      "PackagePath": "staticwebassets\\styles.css"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.NutriFlowAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
