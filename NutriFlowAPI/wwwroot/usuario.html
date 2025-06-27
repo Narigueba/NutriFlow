@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Usuário - NutriFlow</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body id="usuario">
+    <header class="app-header">
+      <h1>NutriFlow</h1>
+    </header>
+  <div class="usuario-container">
+    <div class="usuario-card">
+      <div class="usuario-foto">
+        <img id="user-photo" src="img/avatar-default.png" alt="Usuário" />
+      </div>
+      <div class="usuario-actions">
+        <button class="usuario-btn" id="meus-dados"><i class="lucide" data-lucide="user"></i>Meus dados</button>
+        <button class="usuario-btn" id="privacidade"><i class="lucide" data-lucide="settings"></i>Privacidade e Configurações</button>
+        <button class="usuario-btn" id="ajuda"><i class="lucide" data-lucide="help-circle"></i>Ajuda</button>
+        <button class="usuario-btn sair" id="sair"><i class="lucide" data-lucide="log-out"></i>Sair</button>
+      </div>
+    </div>
+  </div>
+  <footer class="bottom-nav">
+      <a href="home.html" class="nav-link"><i class="lucide" data-lucide="home"></i></a>
+      <a href="estoque.html" class="nav-link"><i class="lucide" data-lucide="package"></i></a>
+      <a href="controle.html" class="nav-link"><i class="lucide" data-lucide="plus-circle"></i></a>
+      <a href="notificacao.html" class="nav-link"><i class="lucide" data-lucide="bell"></i></a>
+      <a href="login.html" class="nav-link active"><i class="lucide" data-lucide="user"></i></a>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/usuario.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
